@@ -1,0 +1,21 @@
+HTML Atualizado:
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/SITE(1)style.css">
+    <title>Projeto Integrador - Liberalismo</title>
+</head>
+
+<body>
+    <div class="card">
+        <img src="IMG/PixVerse_Image_Effect_prompt_Animal - cão - ra.jpg" alt="Imagem de um Golden Retriever">
+        <p>
+            O Golden Retriever é uma raça de cão de porte grande... [Seu texto aqui]
+        </p>
+    </div>
+</body>
+
+</html>
