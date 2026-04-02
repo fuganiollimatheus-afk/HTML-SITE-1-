@@ -1,0 +1,23 @@
+<script type="text/javascript">
+    // 1. Declarar as variáveis (Cuidado: 'if' é palavra reservada, mudei para 'lf')
+    var num, sorteado, li, lf;
+    
+    li = 1;  // Limite Inicial
+    lf = 10; // Limite Final
+
+    // 2. Entrada de dados (O 'N' de Number deve ser maiúsculo)
+    num = Number(prompt("Escolha um número entre " + li + " e " + lf));
+
+    // 3. Lógica do Sorteio
+    // A fórmula correta para incluir o número máximo é: Math.random() * (max - min + 1) + min
+    sorteado = Math.trunc(Math.random() * (lf - li + 1) + li);
+
+    // 4. Estrutura de Decisão (Sempre use chaves { } )
+    if (num == sorteado) {
+        document.write("<h1>Parabéns! Você acertou :)</h1>");
+    } else {
+        document.write("<h1>Que pena! Você errou :(</h1>");
+        document.write("O número sorteado era: " + sorteado + "<br>");
+        document.write("Você escolheu: " + num);
+    }
+</script>
