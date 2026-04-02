@@ -1,0 +1,17 @@
+<script type="text/javascript">
+    // 1. Declarar variáveis separadas por vírgula (não use "e")
+    var n1, n2, n3;
+
+    // 2. Sortear os números corretamente
+    // Math.random() gera um número entre 0 e 1. 
+    // Multiplicamos por 100 e depois o Math.trunc "corta" as casas decimais.
+    n1 = Math.trunc(Math.random() * 100) + 1;
+    n2 = Math.trunc(Math.random() * 100) + 1;
+    n3 = Math.trunc(Math.random() * 100) + 1;
+
+    // 3. Exibir os resultados
+    document.write("Numeros sorteados: <br>");
+    document.write("n1: ", n1, "<br>");
+    document.write("n2: ", n2, "<br>");
+    document.write("n3: ", n3, "<br>");
+</script>
