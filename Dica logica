@@ -1,0 +1,11 @@
+Como salvar isso no VS Code:
+No VS Code, clique em File > New Text File.
+
+Cole o texto acima.
+
+Clique em File > Save As... e dê o nome exatamente de README.md (o .md significa Markdown).
+
+Quando você subir para o GitHub, ele vai formatar automaticamente com títulos, negritos e listas.
+
+🚀 Dica Final para o GitHub:
+Se você quiser deixar ainda mais profissional, você pode tirar um print do seu código rodando no terminal do VS Code e arrastar para dentro do arquivo README no site do GitHub. Imagens ajudam muito a mostrar que o código funciona de verdade!
