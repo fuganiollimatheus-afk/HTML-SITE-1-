@@ -1,0 +1,10 @@
+Aqui está a lista completa de programas em JavaScript. Como você está praticando para o GitHub e para as provas do IFSP, estruturei cada um para rodar diretamente 
+no navegador (usando prompt e alert), que é a forma mais simples de testar lógica.
+
+Dicas de Ouro para sua Prova:
+Entrada vs. Saída: Lembre-se que prompt sempre recebe texto. Por isso usamos o Number() para transformar em número antes de fazer cálculos (especialmente na soma, para não "grudar" um número no outro).
+
+Organização no GitHub: Salve cada um desses como arquivos .js ou coloque todos em um único arquivo HTML usando a tag <script>.
+
+Variável Auxiliar: Na questão 6, pense na variável aux como um copo vazio que você usa para trocar o suco de dois copos cheios sem misturar
+o "passo a passo" lógico de algum desses especificamente? Todos eles seguem a estrutura de Entrada -> Processamento -> Saída.
