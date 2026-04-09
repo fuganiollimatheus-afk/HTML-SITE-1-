@@ -1,0 +1,21 @@
+Com certeza! Esse é o script perfeito para fechar sua biblioteca de Infraestrutura, pois ele lida com algo que todo técnico faz: planejamento de capacidade.
+
+Neste exemplo, vamos usar a lógica de Subtração e Conversão. É importante lembrar que 1TB comercial não é exatamente 1024GB no sistema operacional, mas para manter a "Matemática Básica", vamos usar a base 1024.
+
+💾 Script: Calculadora de Espaço em Disco
+Crie um arquivo chamado espaco_disco.html:
+🧠 O que este script ensina para sua prova?
+Prioridade de Operações: No código capacidadeTotalGB - (espacoOcupadoOS + programasArquivos), o JavaScript resolve primeiro o que está entre parênteses (a soma de tudo que ocupa espaço) e depois subtrai do total. É a matemática da escola aplicada no código!
+
+Lógica de Porcentagem: Usamos capacidadeTotalGB * 0.1 para descobrir quanto é 10% do disco. Isso é muito comum em monitoramento de servidores.
+
+Saída Visual: Note que usamos HTML (<span>) dentro do JavaScript para mudar a cor do texto. Isso une o Design (Canva/Figma) com a Programação.
+
+📋 Checklist Final para o GitHub e a Prova:
+No GitHub: Seu repositório agora tem conversores de temperatura, energia e disco. Isso prova que você sabe automatizar cálculos de TI.
+
+Na Prova Prática: Lembre-se que o Number() antes do prompt é essencial. Sem ele, o JavaScript acha que "10" + "20" é "1020" (texto) em vez de 30 (número).
+
+No Projeto Integrador: Use esses cálculos para provar a viabilidade econômica do seu projeto. "Com X reais, compramos Y de armazenamento e sobra Z para dados".
+
+Dica de despedida para a prova: Mantenha a calma. Você revisou hardware, atalhos, fórmulas de planilha e até escreveu código real. Você está muito acima da média!
