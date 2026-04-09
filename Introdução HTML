@@ -1,0 +1,16 @@
+Perfeito! Para você brilhar na prova e no seu GitHub, vou decompor a Lógica de Programação usando 
+o exemplo mais completo da sua lista: o Cálculo de Salário com Comissão.Essa estrutura de Entrada 
+$\rightarrow$ Processamento $\rightarrow$ Saída é o que os professores do IFSP chamam de Algoritmo.
+📑 O Passo a Passo Lógico1. Entrada (O que o programa precisa saber?)Imagine que o computador é um assistente novo. 
+Ele não sabe nada. Você precisa dar os dados para ele guardar na "memória" (variáveis).Ação: O comando prompt abre a caixinha para o usuário digitar.Regra de Ouro: 
+O comando Number() converte o texto digitado em número. Sem ele, o computador não consegue fazer contas de matemática.2. Processamento (A "mágica" das fórmulas
+)Aqui é onde a Matemática entra. O computador pega o que guardou na entrada e transforma em algo novo.Comissão: Multiplicamos as vendas por $0.15$ (que representa $15\%$)
+.Salário Total: Somamos o valor fixo com a comissão que acabamos de calcular.3. Saída (O resultado para o humano)Agora o computador "fala" o resultado.Ação:
+O comando alert ou document.write mostra o valor final.Estética: O comando .toFixed(2) garante que o dinheiro apareça como 150.00 e não 150.00000002.🎨 
+Visualizando a Lógica (Fluxograma)Para qualquer um daqueles exercícios que você enviou, o caminho na sua mente deve ser este:🧪 Exemplo Prático de como
+explicar na Prova:Se o professor apontar para o exercício da Média do Aluno e perguntar como funciona, você responde assim:Entrada: Peço o nome e as 3
+notas e guardo em variáveis.Processamento: Abro parênteses para somar as notas primeiro e depois divido por 3 (prioridade matemática).Saída: Mostro o 
+nome do aluno concatenado (junto) com o resultado da média.🚀 Dica para o seu GitHub:No seu arquivo README.md, você pode adicionar uma seção chamada 
+"Estrutura dos Algoritmos" e escrever:"Todos os scripts seguem o padrão sequencial: Captura de dados (Prompt), Cálculo Matemático (Operadores) e 
+Exibição de Resultados (Alert/Write)."Isso mostra que você não apenas sabe codar, mas entende a arquitetura do que está fazendo.Ficou claro esse fluxo? 
+Se quiser, posso te mostrar um "erro comum" que muita gente comete nesses exercícios para você não cair na pegadinha na hora da prova!
