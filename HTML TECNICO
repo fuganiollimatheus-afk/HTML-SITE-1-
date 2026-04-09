@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Capacidade de Armazenamento</title>
+</head>
+<body>
+    <script>
+        // ENTRADA: Capacidade total em GB
+        var capacidadeTotalGB = Number(prompt("Qual o tamanho total do HD/SSD em GB? (Ex: 1TB = 1024)"));
+        var espacoOcupadoOS = Number(prompt("Quanto o Sistema Operacional ocupa? (Ex: Windows média 30GB)"));
+        var programasArquivos = Number(prompt("Espaço estimado para programas e arquivos (em GB):"));
+
+        // PROCESSAMENTO: Subtração simples
+        var espacoLivre = capacidadeTotalGB - (espacoOcupadoOS + programasArquivos);
+
+        // LÓGICA DE DECISÃO: Verificar se o disco está cheio (Avançado)
+        var status;
+        if (espacoLivre < (capacidadeTotalGB * 0.1)) {
+            status = "<span style='color:red;'>ALERTA: Espaço Crítico! (Menos de 10% livre)</span>";
+        } else {
+            status = "<span style='color:green;'>SISTEMA OK: Espaço suficiente.</span>";
+        }
+
+        // SAÍDA
+        document.write("<h2>Análise de Armazenamento</h2>");
+        document.write("Capacidade Total: " + capacidadeTotalGB + " GB<br>");
+        document.write("Espaço Livre Restante: " + espacoLivre + " GB<br>");
+        document.write("<strong>Status:</strong> " + status);
+    </script>
+</body>
+</html>
