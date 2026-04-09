@@ -1,0 +1,58 @@
+JavaScript
+// Verifica se o usuário tem idade e permissão para acessar o servidor
+let idade = 20;
+let temAdmin = true;
+
+if (idade >= 18 && temAdmin) {
+    console.log("Acesso concedido ao Servidor Principal.");
+} else {
+    console.log("Acesso negado: Requisitos insuficientes.");
+}
+
+JavaScript
+// Calcula o Retorno sobre Investimento
+function calcularROI(ganho, custo) {
+    let roi = (ganho - custo) / custo;
+    return (roi * 100).toFixed(2) + "%";
+}
+
+console.log("O ROI do novo servidor é: " + calcularROI(5000, 2000));
+
+JavaScript
+let hardwareDisponivel = ["SSD 240GB", "RAM 8GB", "Placa Mãe", "Processador i5"];
+
+// Adicionando um novo item
+hardwareDisponivel.push("Fonte 500W");
+
+// Listando todos os itens usando um Loop (Repetição)
+hardwareDisponivel.forEach((item, index) => {
+    console.log(`${index + 1}: ${item}`);
+});
+
+JavaScript
+function converterMBparaGB(megabytes) {
+    return megabytes / 1024;
+}
+
+let tamanhoArquivo = 4096; // em MB
+console.log(tamanhoArquivo + "MB equivalem a " + converterMBparaGB(tamanhoArquivo) + "GB"
+
+Como organizar isso no VS Code para o GitHub:
+Crie uma pasta no seu PC chamada meus-scripts-js.
+
+Crie arquivos separados para cada um (ex: calculo_roi.js, validacao.js).
+
+Adicione um arquivo README.md: Escreva nele o que você me disse: "Este repositório contém scripts de lógica básica para não depender de IA no futuro."
+
+No Terminal do VS Code:
+
+git init
+
+git add .
+
+git commit -m "Meus primeiros scripts de lógica"
+
+git push origin main
+
+💡 Dica de Ouro:
+No GitHub, use as Issues ou o Wiki para anotar as fórmulas matemáticas que usamos aqui hoje. Isso transforma seu perfil em um portfólio real para o mercado de trabalho.
