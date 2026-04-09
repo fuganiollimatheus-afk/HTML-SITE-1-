@@ -1,0 +1,17 @@
+Excelente! Vamos unir Infraestrutura, Matemática e JavaScript. Esse script é perfeito para o seu GitHub porque mostra 
+que você sabe aplicar programação para resolver problemas reais de TI.Um servidor consome energia baseado na sua potência 
+(Watts) e no tempo que fica ligado. A fórmula básica é:$$Energia (kWh) = \frac{Potência (W) \times Horas}{1000}$$
+
+📚 Por que este script é bom para o seu Projeto Integrador?
+Lógica Prática: Você usa variáveis para armazenar dados técnicos (watts, horas).
+
+Matemática Aplicada: Mostra como a computação ajuda na economia (Liberalismo/Gestão), calculando gastos antes de comprar o equipamento.
+
+Conceito de Infra: Todo técnico de infraestrutura precisa saber se a rede elétrica suporta o servidor e quanto ele vai custar na conta de luz.
+
+🚀 Como organizar no seu GitHub agora:
+Como você já tem o README.md, adicione esta linha na seção de scripts:
+
+consumo_servidor.html: Utilitário para calcular gastos elétricos e eficiência de hardware em Data Centers.
+
+Uma dica para a sua prova: Se o professor perguntar sobre a função .toFixed(2), diga que ela serve para formatar o número, deixando apenas 2 casas decimais (como usamos no dinheiro R$ 0,00).
