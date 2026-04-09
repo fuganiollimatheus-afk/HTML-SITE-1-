@@ -1,0 +1,33 @@
+HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo de Consumo - Infraestrutura</title>
+</head>
+<body>
+    <script>
+        // ENTRADA DE DADOS
+        var nomeServidor = prompt("Digite o nome do servidor:");
+        var watts = Number(prompt("Potência do servidor (em Watts):"));
+        var horas = Number(prompt("Quantas horas ele fica ligado por dia?"));
+        var precoKwh = Number(prompt("Valor do kWh na sua região (ex: 0.70):"));
+
+        // PROCESSAMENTO (Lógica Matemática)
+        // 1. Calcula o consumo diário em kWh
+        var consumoDiario = (watts * horas) / 1000;
+        
+        // 2. Calcula o consumo mensal (30 dias)
+        var consumoMensal = consumoDiario * 30;
+        
+        // 3. Calcula o custo financeiro mensal
+        var custoMensal = consumoMensal * precoKwh;
+
+        // SAÍDA DE DADOS (Relatório técnico)
+        document.write("<h2>Relatório de Consumo: " + nomeServidor + "</h2>");
+        document.write("Consumo Diário: " + consumoDiario.toFixed(2) + " kWh<br>");
+        document.write("Consumo Mensal: " + consumoMensal.toFixed(2) + " kWh<br>");
+        document.write("<strong>Custo Mensal Estimado: R$ " + custoMensal.toFixed(2) + "</strong>");
+    </script>
+</body>
+</html>
