@@ -1,0 +1,26 @@
+HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // P1 - Solicitar a temperatura em °C
+        // Usamos Number() para garantir que o prompt entenda como número
+        var c = Number(prompt("Digite a temperatura em °C:"));
+
+        // P2 - Converter para Fahrenheit (F)
+        var f = (c * 1.8) + 32;
+
+        // P3 - Converter para Kelvin (K)
+        var k = c + 273.15; // O valor exato é 273.15
+
+        // P4 - Saída de Dados
+        document.write("Temperatura inicial em °C: " + c + "<br>");
+        document.write("Temperatura em °F: " + f.toFixed(2) + "<br>"); // toFixed(2) limita as casas decimais
+        document.write("Temperatura em K: " + k.toFixed(2));
+    </script>
+</body>
+</html>
