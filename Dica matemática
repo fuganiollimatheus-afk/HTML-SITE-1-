@@ -1,0 +1,25 @@
+O que foi corrigido (Para você aprender):
+Variáveis (Case Sensitive): No seu código, você definiu var c (minúsculo), mas tentou usar C (maiúsculo). No JavaScript, c e C são coisas diferentes. Usei tudo minúsculo para facilitar.
+
+Pontuação: Você usou : após o var c, f, k. O correto para encerrar uma linha ou declaração é ; (ponto e vírgula).
+
+Concatenação: Para exibir o texto junto com o resultado, usamos o sinal de mais +. Exemplo: "Texto " + variavel.
+
+HTML dentro do JS: O <br> deve estar entre aspas dentro do document.write para que o navegador entenda que é um comando de pular linha.
+
+📊 Conexão com seu Projeto Integrador
+Este script é o exemplo perfeito do seu conceito: "Pegar o Avançado (Física/Termodinâmica) e fazer o Básico (Algoritmo de Conversão)".
+
+Como subir isso para o GitHub:
+
+Crie um arquivo chamado conversor_temp.html.
+
+Cole este código corrigido.
+
+No seu README.md que criamos antes, você pode adicionar:
+
+* conversor_temp.html: Script que utiliza fórmulas matemáticas para converter Celsius em Fahrenheit e Kelvin.
+
+Dica para a prova: Se o professor pedir para explicar o código, diga:
+
+"Este é um algoritmo de entrada, processamento e saída. A entrada é o prompt, o processamento são as fórmulas matemáticas e a saída é o document.write."
