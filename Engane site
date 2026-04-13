@@ -1,0 +1,46 @@
+Entendido, vamos direto ao ponto para consertar o que está impedindo o seu código de funcionar.
+
+Existem três erros críticos no seu código atual que impedem a imagem de aparecer e o estilo de ser aplicado:
+
+1. Erro de Digitação no Link
+Você escreveu stlysheet. O navegador não reconhece isso. O correto é stylesheet. Além disso, verifique se o nome do arquivo é exatamente SITE(0.1).CSS (com parênteses e maiúsculas).
+
+2. CSS fora do arquivo
+O código que começa em body { ... } está colado no final do arquivo HTML. O navegador ignora isso. Você deve apagar esse trecho do arquivo HTML e colá-lo dentro do arquivo que está na pasta CSS/SITE(0.1).CSS.
+
+3. O "body" mal escrito
+No final do seu código, você escreveu ody{. Falta a letra b para formar body {.
+
+Como deve ficar o seu arquivo HTML (index.html):
+HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/SITE(0.1).CSS">
+</head>
+<body>
+    <img src="IMG/Modelo (2).png">
+</body>
+</html>
+Como deve ficar o seu arquivo CSS (CSS/SITE(0.1).CSS):
+CSS
+body {
+    /* O ../ sai da pasta CSS e entra na pasta IMG */
+    background-image: url("../IMG/Modelo (3).png");
+    background-size: contain;
+    background-position: center; /* Use center ou right para melhor visualização */
+    background-attachment: fixed; 
+    background-repeat: no-repeat; /* Evita que a imagem fique repetindo */
+}
+Resumo do conserto:
+
+Conserte stlysheet para stylesheet.
+
+Mova o código do fundo para o arquivo .css separado.
+
+Certifique-se de que o arquivo CSS não tenha a tag ody e sim body.
+
+Remova espaços vazios e caracteres estranhos como as barras invertidas \ que o editor às vezes coloca automaticamente nos nomes de arquivos com espaços.
