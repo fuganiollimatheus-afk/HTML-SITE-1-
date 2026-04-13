@@ -1,0 +1,43 @@
+Percebi que você está começando a estruturar sua página, mas há alguns detalhes no código que estão impedindo que o seu CSS e a sua imagem funcionem corretamente.
+
+Aqui estão os pontos principais que precisamos ajustar:
+
+1. Separação de Arquivos
+O código CSS (body { ... }) deve ficar dentro de um arquivo separado (chamado SITE.CSS na pasta CSS) ou dentro de uma tag <style> no HTML. No seu exemplo, ele está "solto" fora das tags de fechamento do HTML.
+
+2. Sintaxe do Link CSS
+A tag <link> usa o atributo rel="stylesheet" para identificar que é um arquivo de estilo. O nome site.CSS não deve ir no rel.
+
+3. Localização da Imagem
+A tag <img> geralmente fica dentro do <body>, que é onde o conteúdo visível aparece. Se ela ficar no <head>, ela não será exibida corretamente ou pode causar erros de renderização.
+
+Código Corrigido (HTML)
+HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <link rel="stylesheet" href="CSS/SITE.CSS">
+</head>
+<body>
+
+    <img src="IMG/Modelo.png" alt="Descrição da Imagem">
+
+</body>
+</html>
+Código Corrigido (CSS - Arquivo CSS/SITE.CSS)
+Certifique-se de que o caminho da imagem no CSS está correto em relação à pasta onde o arquivo CSS está. Se o CSS está dentro de uma pasta e a imagem em outra, use ../ para "sair" da pasta atual:
+
+CSS
+body {
+    /* O ../ serve para sair da pasta CSS e entrar na pasta IMG */
+    background-image: url('../IMG/Modelo.png');
+    background-color: cadetblue;
+    background-size: cover; /* Faz a imagem cobrir a tela toda */
+}
+Dicas Rápidas:
+Caminhos: Verifique se o nome das pastas e arquivos está exatamente igual (letras maiúsculas e minúsculas importam em muitos servidores).
+
+Ordem: O background-color só aparecerá se a imagem de fundo falhar ou for transparente em algum ponto.
