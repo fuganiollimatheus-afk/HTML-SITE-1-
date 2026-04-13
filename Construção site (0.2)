@@ -1,0 +1,63 @@
+Se entendi bem, você quer colocar uma cor de fundo em um elemento específico (um "quadro" ou "box") em vez de pintar o site inteiro, certo?
+
+Para fazer isso, você precisa usar uma <div> (que funciona como um container ou quadro) e aplicar o estilo a ela no CSS.
+
+Aqui estão as melhores formas de fazer isso:
+
+1. Usando uma Classe (O modo mais organizado)
+No HTML, você cria a "caixa" e no CSS você define a cor e o tamanho.
+
+HTML:
+
+HTML
+<div class="quadro-branco">
+    <p>Este texto está dentro do quadro!</p>
+</div>
+CSS (SITE.CSS):
+
+CSS
+.quadro-branco {
+    background-color: white; /* Cor de fundo branca */
+    color: black;            /* Cor do texto preta para contrastar */
+    padding: 20px;           /* Espaço interno para o texto não grudar na borda */
+    border-radius: 8px;      /* Arredonda as bordas do quadro */
+    width: 300px;            /* Define uma largura para o quadro */
+    margin: 20px auto;       /* Centraliza o quadro na tela */
+}
+2. Usando Cores com Transparência (RGBA)
+Se você quiser que o quadro seja branco, mas deixe o fundo (sua imagem Modelo.png) aparecer um pouco por trás, use o rgba:
+
+CSS
+.quadro-branco {
+    background-color: rgba(255, 255, 255, 0.8); /* O 0.8 é a opacidade (80%) */
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+3. Opções de Cores Comuns
+Se quiser mudar a cor do "quadro" para algo além do branco, aqui estão as formas de escrever:
+
+Por nome: background-color: white; ou background-color: lightgrey;
+
+Por Hexadecimal: background-color: #FFFFFF; (Branco) ou #F0F0F0; (Cinza claro)
+
+Por RGB: background-color: rgb(255, 255, 255);
+
+Como ficaria no seu código completo:
+No seu body, você já tem aquela cor cadetblue e a imagem. O quadro branco vai "flutuar" em cima disso:
+
+CSS
+body {
+    background-image: url('../IMG/Modelo.png');
+    background-color: cadetblue;
+    display: flex; 
+    justify-content: center; /* Centraliza o quadro horizontalmente */
+    align-items: center;     /* Centraliza o quadro verticalmente */
+    height: 100vh;           /* Faz o corpo ter a altura da tela toda */
+    margin: 0;
+}
+
+.meu-quadro {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3); /* Adiciona uma sombra para dar destaque */
+}
