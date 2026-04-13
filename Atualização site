@@ -1,0 +1,74 @@
+Entendo perfeitamente a frustração! Trabalhar com caminhos de imagem e posicionamento no CSS pode ser chatinho no começo.
+
+O principal problema é que você está tentando colocar a imagem de duas formas diferentes ao mesmo tempo: como conteúdo (tag <img>) e como fundo (background-image). Além disso, o código CSS está "jogado" fora do lugar correto.
+
+Para deixar o site com um visual profissional, onde o "quadro" (conteúdo) fica por cima do fundo, siga estes passos:
+
+1. Limpe o seu HTML
+No seu index.html, deixe apenas o que é conteúdo real. As imagens de decoração ou fundo devem ir para o CSS.
+
+HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="CSS/SITE.CSS">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bem-vindo ao meu site</h1>
+        <p>O conteúdo aqui ficará dentro do quadro branco.</p>
+        <img src="IMG/Modelo.png" alt="Foto de destaque">
+    </div>
+
+</body>
+</html>
+2. Organize o seu CSS (CSS/SITE.CSS)
+Apague tudo o que estiver fora do arquivo e coloque isso dentro do seu arquivo SITE.CSS.
+
+Atenção ao caminho da imagem: Se o seu CSS está dentro de uma pasta chamada CSS, você precisa "sair" dela para achar a pasta IMG. Usamos ../ para isso.
+
+CSS
+body {
+    /* Define a imagem de fundo em toda a tela */
+    background-image: url('../IMG/Modelo (1).png');
+    background-size: cover;       /* Faz a imagem ocupar a tela toda sem repetir */
+    background-position: center;  /* Centraliza a imagem */
+    background-attachment: fixed; /* O fundo não mexe quando você rola a página */
+    
+    display: flex;
+    justify-content: center;      /* Centraliza o quadro horizontalmente */
+    align-items: center;          /* Centraliza o quadro verticalmente */
+    min-height: 100vh;            /* Garante que o corpo tenha o tamanho da tela */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* O estilo do seu quadro branco */
+.container {
+    background-color: white;      /* Cor do quadro */
+    padding: 40px;                /* Espaço interno */
+    border-radius: 15px;          /* Bordas arredondadas */
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.5); /* Sombra para dar profundidade */
+    max-width: 500px;             /* Largura máxima do quadro */
+    text-align: center;           /* Centraliza o texto e a imagem dentro do quadro */
+}
+
+.container img {
+    width: 100%;                  /* A imagem de dentro do quadro se ajusta a ele */
+    height: auto;
+    border-radius: 8px;
+}
+O que mudou?
+Caminho da Imagem: Usei ../IMG/Modelo (1).png. O ../ é essencial se o arquivo CSS estiver dentro de uma pasta.
+
+Organização: Agora você tem um fundo (no body) e um quadro (na .container) que flutua sobre esse fundo.
+
+Centralização: Usei o display: flex, que é a forma mais moderna de deixar tudo alinhado no meio da tela.
+
+Dica de ouro: Evite usar parênteses nos nomes de arquivos como Modelo (1).png, pois o navegador às vezes se confunde com os espaços e símbolos. Se puder, renomeie para modelo1.png.
+
+Como você queria que ficasse exatamente? Se descrever o layout, eu te ajudo a ajustar as medidas!
