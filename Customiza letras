@@ -1,0 +1,16 @@
+CSS
+body {
+    /* Define uma família de fontes moderna e limpa */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Melhora a suavidade das letras na tela */
+    -webkit-font-smoothing: antialiased;
+    
+    /* Cor que harmonize com o seu background cadetblue */
+    color: #333; 
+}
+
+h1 {
+    font-weight: 700;   /* Letra bem forte para o título */
+    letter-spacing: -1px; /* Diminuir o espaço entre letras dá um ar mais "premium" */
+}
