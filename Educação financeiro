@@ -1,0 +1,12 @@
+// Exemplo: O sistema analisa a forma de pagamento para ensinar consciência
+let valorCompra = 100;
+let formaPagamento = "dinheiro"; // Entrada do usuário
+
+switch (formaPagamento) {
+    case "dinheiro":
+        console.log("Consciência: Você economizou 5% evitando juros!");
+        break;
+    case "cartao_credito":
+        console.log("Alerta: Você pagará 10% a mais. Vale a pena esperar?");
+        break;
+}
