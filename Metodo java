@@ -1,0 +1,21 @@
+// O SEU MÉTODO: Une lógica de programação com educação financeira
+function metodoAChave(valor, formaPagamento) {
+    let final;
+    let mensagem;
+
+    switch (formaPagamento) {
+        case 'dinheiro':
+            final = valor * 0.95; // 5% de desconto
+            mensagem = "Escolha inteligente! Você economizou.";
+            break;
+        case 'credito':
+            final = valor * 1.10; // 10% de acréscimo
+            mensagem = "Cuidado! O crédito pode ser uma armadilha.";
+            break;
+        default:
+            final = valor;
+            mensagem = "Pagamento processado.";
+    }
+
+    return { valorFinal: final, conselho: mensagem };
+}
