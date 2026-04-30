@@ -1,0 +1,377 @@
+Aqui estão os programas resolvidos em JavaScript (dentro da estrutura de um arquivo HTML para que possas testar facilmente no teu navegador ou editor de texto), utilizando os conceitos de **estruturas de seleção** vistos no material do Prof. André.
+
+---
+
+### 1. Programa: Número maior que 10
+Solicita um número e mostra uma mensagem caso seja maior que 10.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Maior que 10</title>
+</head>
+<body>
+    <script>
+        var numero = Number(prompt("Digite um número:"));
+
+        if (numero > 10) {
+            document.write("O número é maior que 10.");
+        } else {
+            document.write("O número não é maior que 10.");
+        }
+    </script>
+</body>
+</html>
+```
+
+---
+
+### 2. Programa: Dois valores inteiros distintos
+Solicita dois valores inteiros distintos e informa qual é o maior.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Maior entre dois valores</title>
+</head>
+<body>
+    <script>
+        var n1 = Number(prompt("Digite o primeiro número:"));
+        var n2 = Number(prompt("Digite o segundo número:"));
+
+        if (n1 === n2) {
+            document.write("Os números são iguais. Por favor, digite valores distintos.");
+        } else if (n1 > n2) {
+            document.write("O maior número é: " + n1);
+        } else {
+            document.write("O maior número é: " + n2);
+        }
+    </script>
+</body>
+</html>
+```
+
+---
+
+### 3. Programa: Número no intervalo entre 100 e 200
+Informa se o número está no intervalo fechado entre 100 e 200.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Intervalo 100 a 200</title>
+</head>
+<body>
+    <script>
+        var numero = Number(prompt("Digite um número:"));
+
+        if (numero >= 100 && numero <= 200) {
+            document.write("O número está no intervalo entre 100 e 200.");
+        } else {
+            document.write("O número NÃO está no intervalo entre 100 e 200.");
+        }
+    </script>
+</body>
+</html>
+```
+
+---
+
+### 4. Programa: Cálculo de média e menção do aluno
+Recebe o nome e três notas, calcula a média e apresenta o resultado conforme a menção.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Média do Aluno</title>
+</head>
+<body>
+    <script>
+        var nome = prompt("Digite o nome do aluno:");
+        var n1 = Number(prompt("Digite a nota 1:"));
+        var n2 = Number(prompt("Digite a nota 2:"));
+        var n3 = Number(prompt("Digite a nota 3:"));
+
+        var media = (n1 + n2 + n3) / 3;
+
+        document.write("Aluno: " + nome + "<br>");
+        document.write("Média: " + media.toFixed(2) + "<br>");
+
+        if (media >= 6.0) {
+            document.write("Menção: Aprovado");
+        } else if (media >= 4.0 && media < 6.0) {
+            document.write("Menção: Recuperação");
+        } else {
+            document.write("Menção: Reprovado");
+        }
+    </script>
+</body>
+</html>
+```
+
+---
+
+### 5. Programa: Ler 5 números e verificar o intervalo entre 10 e 150
+Usa uma estrutura de repetição (`for`) para ler 5 números e contar quantos estão no intervalo de 10 a 150.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Intervalo</title>
+</head>
+<body>
+    <script>
+        var dentroDoIntervalo = 0;
+
+        for (var i = 1; i <= 5; i++) {
+            var numero = Number(prompt("Digite o número " + i + " de 5:"));
+            if (numero >= 10 && numero <= 150) {
+                dentroDoIntervalo++;
+            }
+        }
+
+        document.write("Quantidade de números no intervalo entre 10 e 150: " + dentroDoIntervalo);
+    </script>
+</body>
+</html>
+```
+
+---
+
+### 6. Programa: Maior e menor de idade para 5 pessoas
+Recebe a idade de 5 pessoas e classifica-as como maior ou menor de idade.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <script>
+        document.write("<h2>Resultado da verificação de idade:</h2>");
+        for (var i = 1; i <= 5; i++) {
+            var idade = Number(prompt("Digite a idade da pessoa " + i + " de 5:"));
+            if (idade >= 18) {
+                document.write("Pessoa " + i + ": " + idade + " anos - Maior de idade<br>");
+            } else {
+                document.write("Pessoa " + i + ": " + idade + " anos - Menor de idade<br>");
+            }
+        }
+    </script>
+</body>
+</html>
+```
+
+---
+
+### 7. Programa: Ler nome e sexo de 5 pessoas
+Informa se é homem ou mulher para cada uma e, no final, apresenta o total.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Sexo</title>
+</head>
+<body>
+    <script>
+        var totalHomens = 0;
+        var totalMulheres = 0;
+
+        for (var i = 1; i <= 5; i++) {
+            var nome = prompt("Digite o nome da pessoa " + i + " de 5:");
+            var sexo = prompt("Digite o sexo (M para Masculino / F para Feminino):").toUpperCase();
+
+            if (sexo === "M") {
+                document.write(nome + " é Homem.<br>");
+                totalHomens++;
+            } else if (sexo === "F") {
+                document.write(nome + " é Mulher.<br>");
+                totalMulheres++;
+            } else {
+                document.write(nome + " possui sexo não reconhecido.<br>");
+            }
+        }
+
+        document.write("<hr>");
+        document.write("Total de homens: " + totalHomens + "<br>");
+        document.write("Total de mulheres: " + totalMulheres);
+    </script>
+</body>
+</html>
+```
+
+---
+
+### 8. Programa: Análise de custo e venda de 5 produtos
+Mostra o resultado para cada produto e calcula a média dos preços.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Análise de Produtos</title>
+</head>
+<body>
+    <script>
+        var somaCusto = 0;
+        var somaVenda = 0;
+
+        document.write("<h2>Resultado por Produto:</h2>");
+        for (var i = 1; i <= 5; i++) {
+            var custo = Number(prompt("Preço de custo do produto " + i + ":"));
+            var venda = Number(prompt("Preço de venda do produto " + i + ":"));
+
+            somaCusto += custo;
+            somaVenda += venda;
+
+            var resultado = venda - custo;
+
+            if (resultado > 0) {
+                document.write("Produto " + i + ": Lucro de R$ " + resultado.toFixed(2) + "<br>");
+            } else if (resultado < 0) {
+                document.write("Produto " + i + ": Prejuízo de R$ " + Math.abs(resultado).toFixed(2) + "<br>");
+            } else {
+                document.write("Produto " + i + ": Empate<br>");
+            }
+        }
+
+        var mediaCusto = somaCusto / 5;
+        var mediaVenda = somaVenda / 5;
+
+        document.write("<hr>");
+        document.write("Média do preço de custo: R$ " + mediaCusto.toFixed(2) + "<br>");
+        document.write("Média do preço de venda: R$ " + mediaVenda.toFixed(2));
+    </script>
+</body>
+</html>
+```
+
+---
+
+### 9. Programa: Análise de número por valor específico
+Mostra mensagem caso o número seja maior que 80, menor que 25 ou igual a 40.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Análise de Número</title>
+</head>
+<body>
+    <script>
+        var numero = Number(prompt("Digite um número:"));
+
+        if (numero > 80) {
+            document.write("O número é maior que 80.");
+        } else if (numero < 25) {
+            document.write("O número é menor que 25.");
+        } else if (numero === 40) {
+            document.write("O número é igual a 40.");
+        } else {
+            document.write("O número não atende a nenhuma das condições estabelecidas.");
+        }
+    </script>
+</body>
+</html>
+```
+
+---
+
+### 10. Programa: Comparador de dois números (identificar igualdade ou maior)
+Lê dois números, imprime se são iguais ou, se diferentes, informa qual é o maior.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparador de Números</title>
+</head>
+<body>
+    <script>
+        var n1 = Number(prompt("Digite o primeiro número:"));
+        var n2 = Number(prompt("Digite o segundo número:"));
+
+        if (n1 === n2) {
+            document.write("Os números são iguais.");
+        } else {
+            document.write("Os números são diferentes.<br>");
+            if (n1 > n2) {
+                document.write("O maior número é o 1º: " + n1);
+            } else {
+                document.write("O maior número é o 2º: " + n2);
+            }
+        }
+    </script>
+</body>
+</html>
+```
+
+---
+
+### 11. Programa: Valor total da compra e desconto/acréscimo de três produtos
+Calcula o valor considerando a forma de pagamento selecionada.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Compra</title>
+</head>
+<body>
+    <script>
+        var p1 = Number(prompt("Valor do 1º produto:"));
+        var p2 = Number(prompt("Valor do 2º produto:"));
+        var p3 = Number(prompt("Valor do 3º produto:"));
+        var formaPagamento = prompt("Forma de pagamento (dinheiro, pix, ou outro):").toLowerCase();
+
+        var valorTotal = p1 + p2 + p3;
+        var valorFinal = 0;
+        var alteracao = 0;
+
+        switch (formaPagamento) {
+            case "dinheiro":
+                alteracao = valorTotal * 0.10; // 10% de desconto
+                valorFinal = valorTotal - alteracao;
+                break;
+            case "pix":
+                alteracao = 0; // Sem alteração
+                valorFinal = valorTotal;
+                break;
+            default: // Qualquer outro tipo
+                alteracao = valorTotal * 0.05; // 5% de acréscimo
+                valorFinal = valorTotal + alteracao;
+                break;
+        }
+
+        document.write("<h2>Resumo da Compra:</h2>");
+        document.write("Valor total sem desconto/acréscimo: R$ " + valorTotal.toFixed(2) + "<br>");
+        if (formaPagamento === "dinheiro") {
+            document.write("Desconto aplicado: R$ " + alteracao.toFixed(2) + "<br>");
+        } else if (formaPagamento === "pix") {
+            document.write("Alteração: R$ 0.00 (PIX)<br>");
+        } else {
+            document.write("Acréscimo aplicado: R$ " + alteracao.toFixed(2) + "<br>");
+        }
+        document.write("<strong>Valor final a ser pago: R$ " + valorFinal.toFixed(2) + "</strong>");
+    </script>
+</body>
+</html>
+```
