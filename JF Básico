@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Números</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Correção: uso do ponto e vírgula no final da declaração
+        var n1, n2;
+
+        n1 = Number(prompt("Digite o 1º número:"));
+        n2 = Number(prompt("Digite o 2º número:"));
+
+        // Estrutura de decisão (condição x decisão)
+        if (n1 == n2) {
+            document.write("Os números são iguais.");
+        } else if (n1 > n2) {
+            document.write("O 1º número é maior do que o 2º número.");
+        } else {
+            document.write("O 2º número é maior do que o 1º número.");
+        }
+    </script>
+</body>
+
+</html>
+
+      <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação de Competidores</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Definição das variáveis
+        var anoNascimento, idade, anoAtual;
+
+        // O ano atual está fixado em 2026 para o cálculo correto
+        anoAtual = 2026;
+
+        // Solicita o ano de nascimento
+        anoNascimento = Number(prompt("Digite o seu ano de nascimento:"));
+
+        // Cálculo da idade
+        idade = anoAtual - anoNascimento;
+
+        document.write("Idade calculada: " + idade + " anos.<br>");
+
+        // Estrutura de decisão para faixas etárias
+        if (idade >= 8 && idade <= 10) {
+            document.write("Classificação: Infantil");
+        } else if (idade >= 11 && idade <= 14) {
+            document.write("Classificação: Juvenil");
+        } else if (idade >= 15 && idade <= 17) {
+            document.write("Classificação: Júnior");
+        } else if (idade >= 18 && idade <= 49) {
+            document.write("Classificação: Adulto");
+        } else if (idade >= 50 && idade <= 59) {
+            document.write("Classificação: Master");
+        } else if (idade >= 60) {
+            document.write("Classificação: Sênior");
+        } else {
+            document.write("Idade abaixo do limite mínimo (menos de 8 anos).");
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+      <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Pagamento</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 1. Entrada de dados
+        var valorCompra = Number(prompt("Digite o valor da compra (Ex: 100):"));
+        var formaPagamento = prompt("Escolha a forma de pagamento:\n- dinheiro\n- pix\n- debito\n- credito");
+
+        // 2. Variáveis de processamento
+        var valorDescontoAcre = 0;
+        var valorFinal = 0;
+
+        // 3. Estrutura de decisão (Switch para avaliar a forma de pagamento)
+        switch (formaPagamento) {
+            case "dinheiro":
+                valorDescontoAcre = valorCompra * 0.05; // 5% de desconto
+                valorFinal = valorCompra - valorDescontoAcre;
+                break;
+                
+            case "pix":
+                valorDescontoAcre = 0; // Sem desconto
+                valorFinal = valorCompra;
+                break;
+                
+            case "debito":
+                valorDescontoAcre = valorCompra * 0.05; // 5% de acréscimo
+                valorFinal = valorCompra + valorDescontoAcre;
+                break;
+                
+            case "credito":
+                valorDescontoAcre = valorCompra * 0.10; // 10% de acréscimo
+                valorFinal = valorCompra + valorDescontoAcre;
+                break;
+                
+            default:
+                // Trata erro de digitação caso o usuário insira um valor inválido
+                alert("Forma de pagamento inválida. Recarregue a página e tente novamente.");
+        }
+
+        // 4. Saída de dados (apresenta os resultados na tela)
+        if (formaPagamento === "dinheiro" || formaPagamento === "pix" || formaPagamento === "debito" || formaPagamento === "credito") {
+            document.write("<h2>Resumo da Compra:</h2>");
+            document.write("Valor original da compra: R$ " + valorCompra.toFixed(2) + "<br>");
+            
+            if (formaPagamento === "dinheiro" || formaPagamento === "debito" || formaPagamento === "credito") {
+                document.write("Valor do desconto/acréscimo: R$ " + valorDescontoAcre.toFixed(2) + "<br>");
+            } else {
+                document.write("Valor do desconto/acréscimo: R$ 0.00<br>");
+            }
+            
+            document.write("<strong>Valor final a ser pago: R$ " + valorFinal.toFixed(2) + "</strong>");
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+          
