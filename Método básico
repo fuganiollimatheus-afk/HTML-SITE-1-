@@ -1,0 +1,36 @@
+function calcularVelocidade(distancia, tempo) {
+    if (tempo <= 0) {
+        return "Erro: O tempo deve ser maior que zero.";
+    }
+    let velocidade = distancia / tempo;
+    return "A velocidade média é: " + velocidade.toFixed(2) + " km/h.";
+}
+
+function verificarTriangulo(a, b, c) {
+    if (a < b + c && b < a + c && c < a + b) {
+        return "Os valores formam um triângulo válido.";
+    } else {
+        return "Os valores NÃO formam um triângulo.";
+    }
+}
+
+function calcularVelocidade(distancia, tempo) {
+    if (tempo <= 0) {
+        return "Erro: O tempo deve ser maior que zero.";
+    } else {
+        let velocidade = distancia / tempo;
+        return "A velocidade média é: " + velocidade.toFixed(2) + " km/h.";
+    }
+}
+// Teste do programa
+console.log(calcularVelocidade(150, 2));
+
+function verificarTriangulo(a, b, c) {
+    if (a < (b + c) && b < (a + c) && c < (a + b)) {
+        return "Os valores formam um triângulo válido.";
+    } else {
+        return "Os valores NÃO formam um triângulo.";
+    }
+}
+// Teste do programa
+console.log(verificarTriangulo(5, 4, 3));
