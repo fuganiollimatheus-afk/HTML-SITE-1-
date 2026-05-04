@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box um">Liberalismo</div>
+        <div class="box dois">Saúde</div>
+        <div class="box tres">Direito</div>
+    </div>
+</body>
+</html>
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.box {
+    flex: 1;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+    /* Propriedades do Texto */
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/* Cores das Caixas */
+.um { background-color: #1547ec; }
+.dois { background-color: #4124e7; }
+.tres { background-color: #d2691e; }
