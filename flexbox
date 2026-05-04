@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box um">item 1</div>
+        <div class="box dois">item 2</div>
+        <div class="box tres">item 3</div>
+    </div>
+</body>
+
+</html>
+
+/* Ativa o Flexbox no container principal */
+.container {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens horizontalmente */
+    align-items: center;            /* Alinha os itens ao centro */
+    height: 100vh;                  /* Ocupa toda a altura da tela */
+    gap: 10px;                      /* Espaçamento entre as caixas */
+}
+
+/* Configuração dos itens */
+.box {
+    height: 200px;
+    width: 200px;
+    display: flex;                  /* Permite alinhar o texto dentro da caixa */
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 8px;             /* Borda arredondada para design moderno */
+}
+
+/* Cores de cada item */
+.um {
+    background-color: aquamarine;
+}
+
+.dois {
+    background-color: bisque;
+}
+
+.tres {
+    background-color: blueviolet;
+    color: white; /* Contraste para melhor leitura */
+}
