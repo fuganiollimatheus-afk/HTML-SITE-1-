@@ -1,0 +1,40 @@
+:root {
+  /* Cores */
+  --color-black: #000000;
+  --color-primary: #4d8b55;
+  --color-primary-dark: #3a6d42;
+  --color-text-light: rgba(255, 255, 255, 0.85);
+  --color-border-light: rgba(255, 255, 255, 0.25);
+  --color-overlay: rgba(0, 0, 0, 0.55);
+  --color-menu-bg: #4d8b55;
+  --color-hover: #452829;
+
+  /* Larguras e Contêineres */
+  --container-width: 92%;
+  --container-max-width: 1680px;
+
+  /* Espaçamentos */
+  --space-xs: 10px;
+  --space-sm: 14px;
+  --space-md: 12px; /* Valor atualizado e limpo */
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* Dimensões e Ícones */
+  --icon-size: 36px; /* Valor atualizado e limpo */
+  --logo-width: 140px;
+  --hero-max-width: 980px;
+  --line-width: 40px;
+  --menu-width: 280px;
+  --radius-full: 999px;
+
+  /* Transições */
+  --transition-fast: 0.3s ease;
+  --transition-normal: 0.4s ease;
+}
+
+.card {
+    background-color: var(--color-primary);
+    padding: var(--space-md);
+    transition: var(--transition-fast);
+}
