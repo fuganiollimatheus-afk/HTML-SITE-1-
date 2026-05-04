@@ -1,0 +1,84 @@
+/* Estilizando o texto principal da página */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    line-height: 1.6; /* Espaçamento entre as linhas para facilitar a leitura */
+    margin: 0;
+}
+
+/* Estilizando um título (h1) */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1547ec;
+    text-align: center;
+}
+
+/* Estilizando um parágrafo dentro de um card */
+p {
+    font-size: 16px;
+    font-weight: 400; /* Peso normal */
+    color: #555555;
+    text-align: justify;
+}
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+<img src="IMG/Lupa.png" alt="Descrição da imagem para acessibilidade">
+
+<img src="Lupa.png" alt="Exemplo">
+
+<img src="../IMG/Lupa.png" alt="Exemplo">
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+</head>
+<body>
+
+    <div class="card">
+        <img src="IMG/Lupa.png" alt="Ícone de pesquisa simbolizando conhecimento">
+        
+        <h1>Projeto Integrador</h1>
+        <p>Liberalismo e Direitos Humanos.</p>
+    </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus - Apresentação</title>
+    <link rel="stylesheet" href="CSS/DESG(1).css">
+</head>
+
+<body>
+    <img src="MODELO/Modelo figma.png" alt="Modelo para integrador">
+
+    <h1>
+        Eu sou Matheus tenho 20 anos, gosto de desenhar, quero ser professor 
+        e gosto de macarrão e manga.
+    </h1>
+</body>
+
+</html>
+
+body {
+    font-family: cursive;
+    color: chocolate;
+    line-height: 1.6;
+    margin: 10px; /* Adicionada a unidade de medida */
+}
