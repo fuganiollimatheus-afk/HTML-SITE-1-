@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus - Apresentação</title>
+    <link rel="stylesheet" href="CSS/DESG(1).css">
+</head>
+
+<body>
+    <img src="MODELO/Modelo figma.png" alt="Modelo para integrador">
+
+    <h1>
+        Eu sou Matheus tenho 20 anos, gosto de desenhar, quero ser professor 
+        e gosto de macarrão e manga.
+    </h1>
+
+    <a href="https://github.com/SEU-USUARIO" target="_blank" class="link-site">
+        Acessar meu GitHub ou Projeto
+    </a>
+</body>
+
+</html>
+
+body {
+    font-family: cursive;
+    color: chocolate;
+    line-height: 1.6;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilização simples para o link */
+.link-site {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #4d8b55;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.link-site:hover {
+    background-color: #3a6d42;
+}
