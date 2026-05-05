@@ -1,0 +1,180 @@
+seu-projeto/
+│
+├── index.html
+├── IMG/
+│   └── Modelo (0.1).png
+└── MODELO/
+    └── Modelo projeto intregador.css
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script modelo</title>
+    <link rel="stylesheet" href="MODELO/Modelo projeto intregador.css">
+</head>
+
+<body>
+    <header class="header">
+        </header>
+    
+    <nav class="nav">
+        <a href="#"> 
+            <img src="IMG/Modelo (0.1).png" alt="logo">
+        </a>
+        
+        <ul class="menu-lista">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre o Projeto</a></li>
+            <li><a href="#chaves">A Chave</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
+
+/* Reset básico para garantir um espaçamento uniforme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Estilização do Header */
+.header {
+    background-color: #004080; /* Azul institucional */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização da Navbar (Barra de navegação) */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.nav img {
+    height: 40px; /* Ajuste do tamanho do logótipo */
+    width: auto;
+}
+
+/* Lista de navegação */
+.nav .menu-lista {
+    display: flex;
+    list-style: none;
+}
+
+.nav .menu-lista li {
+    margin-left: 30px;
+}
+
+.nav .menu-lista li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Efeito ao passar o rato nos links */
+.nav .menu-lista li a:hover {
+    color: #004080;
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script modelo</title>
+    <link rel="stylesheet" href="MODELO/Modelo projeto intregador.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Meu Projeto Integrador</h1>
+    </header>
+    
+    <nav class="nav">
+        <a href="#"> 
+            <img src="IMG/Modelo (0.1).png" alt="logo">
+        </a>
+        
+        <ul class="menu-lista">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre o Projeto</a></li>
+            <li><a href="#chaves">A Chave</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+.header {
+    background-color: #004080;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.nav img {
+    height: 40px;
+    width: auto;
+}
+
+.nav .menu-lista {
+    display: flex;
+    list-style: none;
+}
+
+.nav .menu-lista li {
+    margin-left: 30px;
+}
+
+.nav .menu-lista li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav .menu-lista li a:hover {
+    color: #004080;
+}
