@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus - Apresentação</title>
+    <link rel="stylesheet" href="CSS/DESG(1).css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        
+        <div class="logo-container">
+            <h1>Matheus</h1>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="status-container">
+            <span>Status: Disponível para projetos</span>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <img src="MODELO/Modelo figma.png" alt="Modelo para integrador">
+
+        <h1>
+            Eu sou Matheus tenho 20 anos, gosto de desenhar, quero ser professor 
+            e gosto de macarrão e manga.
+        </h1>
+
+        <a href="https://github.com/SEU-USUARIO" target="_blank" class="link-site">
+            Acessar meu GitHub ou Projeto
+        </a>
+    </main>
+
+</body>
+
+</html>
+
+
+
+
+/* Limpeza de margens e configuração base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    color: chocolate;
+    line-height: 1.6;
+    background-color: #fcf8f2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilização do cabeçalho */
+.site-header {
+    background-color: #4d8b55;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.site-header h1 {
+    font-size: 24px;
+}
+
+/* Estilização da lista (ul e li) */
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilização do span (destaque) */
+.status-container span {
+    background-color: #3a6d42;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Conteúdo centralizado */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+.main-content img {
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.link-site {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #4d8b55;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.link-site:hover {
+    background-color: #3a6d42;
+}
