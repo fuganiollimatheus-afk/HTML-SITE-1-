@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script modelo</title>
+    <link rel="stylesheet" href="MODELO/Modelo projeto intregador.css">
+</head>
+
+<body>
+    <header class="header">
+        </header>
+    
+    <nav class="nav">
+        <a href="#"> 
+            <img src="IMG/Modelo (0.1).png" alt="logo">
+        </a>
+        
+        <ul class="menu-lista">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre o Projeto</a></li>
+            <li><a href="#chaves">A Chave</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
+
+/* Reset básico para garantir um espaçamento uniforme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Estilização do Header */
+.header {
+    background-color: #004080; /* Azul institucional */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização da Navbar (Barra de navegação) */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.nav img {
+    height: 40px; /* Ajuste do tamanho do logótipo */
+    width: auto;
+}
+
+/* Lista de navegação */
+.nav .menu-lista {
+    display: flex;
+    list-style: none;
+}
+
+.nav .menu-lista li {
+    margin-left: 30px;
+}
+
+.nav .menu-lista li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Efeito ao passar o rato nos links */
+.nav .menu-lista li a:hover {
+    color: #004080;
+}
+
+
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto A Chave</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #004080;
+            font-size: 24px;
+            text-align: center;
+        }
+        button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #00264d;
+        }
+        .output {
+            margin-top: 15px;
+            padding: 10px;
+            background: #e6f2ff;
+            border-left: 4px solid #004080;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Dashboard - Estrutura de Decisão</h1>
+        <p>Clique no botão abaixo para testar o seu simulador de cálculo financeiro:</p>
+        
+        <button onclick="iniciarSimulador()">Iniciar Simulação</button>
+        
+        <div id="resultado" class="output">
+            O resultado será exibido aqui.
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function iniciarSimulador() {
+            var valorCompra = Number(prompt("Digite o valor da compra (Ex: 100):"));
+            var formaPagamento = prompt("Escolha a forma de pagamento (dinheiro, pix, debito, credito):").toLowerCase();
+
+            var valorFinal = 0;
+            var valorAlteracao = 0;
+
+            // Estrutura Switch, ideal para múltiplos casos
+            switch (formaPagamento) {
+                case "dinheiro":
+                    valorAlteracao = valorCompra * 0.05;
+                    valorFinal = valorCompra - valorAlteracao;
+                    alert("Opção Dinheiro selecionada com desconto!");
+                    break;
+                case "pix":
+                    valorAlteracao = 0;
+                    valorFinal = valorCompra;
+                    break;
+                case "debito":
+                    valorAlteracao = valorCompra * 0.05;
+                    valorFinal = valorCompra + valorAlteracao;
+                    break;
+                case "credito":
+                    valorAlteracao = valorCompra * 0.10;
+                    valorFinal = valorCompra + valorAlteracao;
+                    break;
+                default:
+                    alert("Forma de pagamento inválida. Atualize a página e tente novamente.");
+                    return;
+            }
+
+            // Atualiza o documento HTML com o resultado do processamento
+            document.getElementById("resultado").innerHTML = 
+                "<strong>Resumo da Compra:</strong><br>" +
+                "Valor original: R$ " + valorCompra.toFixed(2) + "<br>" +
+                "Desconto/Acréscimo: R$ " + valorAlteracao.toFixed(2) + "<br>" +
+                "<strong>Valor final a pagar: R$ " + valorFinal.toFixed(2) + "</strong>";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto A Chave</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #004080;
+            font-size: 24px;
+            text-align: center;
+        }
+        button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #00264d;
+        }
+        .output {
+            margin-top: 15px;
+            padding: 10px;
+            background: #e6f2ff;
+            border-left: 4px solid #004080;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Dashboard - Estrutura de Decisão</h1>
+        <p>Clique no botão abaixo para testar o seu simulador de cálculo financeiro:</p>
+        
+        <button onclick="iniciarSimulador()">Iniciar Simulação</button>
+        
+        <div id="resultado" class="output">
+            O resultado será exibido aqui.
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function iniciarSimulador() {
+            var valorCompra = Number(prompt("Digite o valor da compra (Ex: 100):"));
+            var formaPagamento = prompt("Escolha a forma de pagamento (dinheiro, pix, debito, credito):").toLowerCase();
+
+            var valorFinal = 0;
+            var valorAlteracao = 0;
+
+            // Estrutura Switch, alterada para a perspectiva do Designer/Projeto
+            switch (formaPagamento) {
+                case "dinheiro":
+                    valorAlteracao = valorCompra * 0.05;
+                    valorFinal = valorCompra - valorAlteracao;
+                    alert("Opção Dinheiro selecionada com desconto!");
+                    break;
+                case "pix":
+                    valorAlteracao = 0;
+                    valorFinal = valorCompra;
+                    break;
+                case "debito":
+                    valorAlteracao = valorCompra * 0.05;
+                    valorFinal = valorCompra + valorAlteracao;
+                    break;
+                case "credito":
+                    valorAlteracao = valorCompra * 0.10;
+                    valorFinal = valorCompra + valorAlteracao;
+                    break;
+                default:
+                    alert("Forma de pagamento inválida. Atualize a página e tente novamente.");
+                    return;
+            }
+
+            // Atualiza o documento HTML com o resultado do processamento do Designer
+            document.getElementById("resultado").innerHTML = 
+                "<strong>Resumo da Compra (Design de Decisão):</strong><br>" +
+                "Valor original: R$ " + valorCompra.toFixed(2) + "<br>" +
+                "Desconto/Acréscimo: R$ " + valorAlteracao.toFixed(2) + "<br>" +
+                "<strong>Valor final a pagar: R$ " + valorFinal.toFixed(2) + "</strong>";
+        }
+    </script>
+</body>
+</html>
+
+
+
