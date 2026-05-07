@@ -1,0 +1,129 @@
+Para completar o seu projeto com foco em **Desenvolvimento de Software** e **Lógica de Programação**, aqui estão as soluções utilizando a estrutura de repetição `while`. 
+
+Estes exercícios são fundamentais para treinar a "infraestrutura" do pensamento algorítmico, garantindo que o programa saiba quando continuar e quando parar.
+
+---
+
+### 1. Soma de 1 até N
+```javascript
+let n = parseInt(prompt("Digite um número inteiro positivo:"));
+let soma = 0, i = 1;
+while (i <= n) {
+    soma += i;
+    i++;
+}
+console.log("A soma de 1 até " + n + " é: " + soma);
+```
+
+### 2. Validação de Senha
+```javascript
+let senhaCorreta = "1234";
+let tentativa = prompt("Digite a senha numérica:");
+while (tentativa !== senhaCorreta) {
+    tentativa = prompt("Senha incorreta, tente novamente:");
+}
+alert("Acesso permitido");
+```
+
+### 3. Contador de Números (Para no 0)
+```javascript
+let num, contador = 0;
+while (true) {
+    num = parseInt(prompt("Digite um número (0 para parar):"));
+    if (num === 0) break;
+    contador++;
+}
+console.log("Total de números digitados: " + contador);
+```
+
+### 4. Média de Notas
+```javascript
+let nota, somaNotas = 0, qtdNotas = 0;
+while (true) {
+    nota = parseFloat(prompt("Digite a nota (negativo para parar):"));
+    if (nota < 0) break;
+    if (nota >= 0 && nota <= 10) {
+        somaNotas += nota;
+        qtdNotas++;
+    }
+}
+console.log("Média das notas: " + (qtdNotas > 0 ? (somaNotas / qtdNotas).toFixed(2) : 0));
+```
+
+### 5. Tabuada com While
+```javascript
+let tab = parseInt(prompt("Deseja a tabuada de qual número?"));
+let j = 1;
+while (j <= 10) {
+    console.log(tab + " x " + j + " = " + (tab * j));
+    j++;
+}
+```
+
+---
+
+### 6. Soma de Pares (Para no -1)
+```javascript
+let valor, somaPares = 0;
+while (valor !== -1) {
+    valor = parseInt(prompt("Digite um número (-1 para sair):"));
+    if (valor !== -1 && valor % 2 === 0) {
+        somaPares += valor;
+    }
+}
+console.log("Soma dos pares: " + somaPares);
+```
+
+### 7. Jogo de Adivinhação
+```javascript
+let secreto = 7; // Pode usar Math.floor(Math.random() * 10) + 1 para aleatório
+let chute;
+while (chute !== secreto) {
+    chute = parseInt(prompt("Tente adivinhar o número secreto (1 a 10):"));
+    if (chute < secreto) alert("Maior");
+    else if (chute > secreto) alert("Menor");
+    else alert("Acertou!");
+}
+```
+
+### 8. Produto por Somas Sucessivas
+```javascript
+let a = parseInt(prompt("Digite o valor A:"));
+let b = parseInt(prompt("Digite o valor B:"));
+let resultado = 0, k = 0;
+while (k < b) {
+    resultado += a;
+    k++;
+}
+console.log("O produto de " + a + " x " + b + " é: " + resultado);
+```
+
+### 9. Total de Compra (Para no 0)
+```javascript
+let preco, total = 0;
+while (true) {
+    preco = parseFloat(prompt("Preço do produto (0 para finalizar):"));
+    if (preco === 0) break;
+    total += preco;
+}
+console.log("Total da compra: R$ " + total.toFixed(2));
+```
+
+### 10. Ultrapassar o Valor X
+```javascript
+let x = parseInt(prompt("Digite o valor de X:"));
+let acumulado = 0, cont = 0;
+while (acumulado <= x) {
+    cont++;
+    acumulado += cont;
+}
+console.log("Último número somado: " + cont);
+console.log("Total final: " + acumulado);
+```
+
+---
+
+### Dica de Designer para o GitHub:
+Como você está organizando seu repositório no GitHub, tente criar um único arquivo chamado `estruturas_repeticao.js` e coloque essas funções lá. Isso ajuda a manter sua **infraestrutura** de arquivos organizada e dentro do seu limite planejado!
+
+Qual desses algoritmos você achou mais desafiador de construir?
