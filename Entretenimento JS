@@ -1,0 +1,74 @@
+var emocaoAtual = prompt("O que você está sentindo?");
+
+switch (emocaoAtual.toLowerCase()) {
+    case "raiva":
+        document.write("Autorrespeito: Respire e comunique seu limite com calma.");
+        break;
+    case "medo":
+        document.write("Autorrespeito: Identifique o risco e se prepare.");
+        break;
+    case "tristeza":
+        document.write("Autorrespeito: Seja gentil consigo mesmo hoje.");
+        break;
+    default:
+        document.write("Siga em frente com consciência.");
+}
+
+function processarSentimento() {
+    // ETAPA 2: Garante que a entrada seja tratada como VALOR (Number)
+    // ETAPA 3: Garante que seja um número INTEIRO (parseInt)
+    let intensidade = parseInt(document.getElementById("inputIntensidade").value);
+    let emocao = document.getElementById("selectEmocao").value;
+    let feedback = document.getElementById("feedback");
+
+    // ETAPA 1: Validação do Intervalo (1 a 100)
+    if (intensidade >= 1 && intensidade <= 100) {
+        
+        let mensagem = "";
+        
+        // Lógica de Autorrespeito baseada na emoção
+        switch (emocao) {
+            case "raiva":
+                mensagem = `Intensidade ${intensidade}%: A raiva protege seus limites. Respire e defina sua fronteira sem agredir.`;
+                break;
+            case "tristeza":
+                mensagem = `Intensidade ${intensidade}%: A tristeza honra o que é importante. Respeite seu tempo de cura.`;
+                break;
+            case "medo":
+                mensagem = `Intensidade ${intensidade}%: O medo busca segurança. Analise o risco com lógica.`;
+                break;
+            case "nojo":
+                mensagem = `Intensidade ${intensidade}%: O nojo afasta o que é tóxico. Confie na sua integridade.`;
+                break;
+            case "felicidade":
+                mensagem = `Intensidade ${intensidade}%: A felicidade confirma seus valores. Aproveite este estado!`;
+                break;
+        }
+        feedback.innerHTML = `<strong>Ação de Autorrespeito:</strong> ${mensagem}`;
+        feedback.style.color = "#004080";
+    } else {
+        feedback.innerHTML = "Erro: Por favor, insira um valor inteiro entre 1 e 100.";
+        feedback.style.color = "red";
+    }
+}
+
+
+
+
+<section class="software-emocional">
+    <h2>Analisador de Autorrespeito</h2>
+    <p>Como você se sente agora? (1 a 100)</p>
+    
+    <select id="selectEmocao">
+        <option value="raiva">Raiva</option>
+        <option value="tristeza">Tristeza</option>
+        <option value="medo">Medo</option>
+        <option value="nojo">Nojo</option>
+        <option value="felicidade">Felicidade</option>
+    </select>
+
+    <input type="number" id="inputIntensidade" placeholder="Ex: 85">
+    <button onclick="processarSentimento()">Analisar Emoção</button>
+
+    <div id="feedback" style="margin-top: 20px;"></div>
+</section>
