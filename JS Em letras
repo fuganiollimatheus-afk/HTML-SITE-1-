@@ -1,0 +1,20 @@
+var numero = Number(prompt("Digite um número entre 1 e 100:"));
+
+if (numero >= 1 && numero <= 100) {
+    console.log("Sucesso: O número está no intervalo permitido.");
+} else {
+    console.log("Erro: O número deve estar entre 1 e 100.");
+}
+
+// O comando Number() transforma o texto em VALOR real
+var valor1 = Number(prompt("Digite o valor 1:"));
+var resultado = valor1 + 10; // Agora o cálculo funciona: 1 + 10 = 11
+
+// parseInt ignora as casas decimais e foca no número inteiro
+var valorInteiro = parseInt(prompt("Digite um valor (será convertido para inteiro):"));
+
+if (isNaN(valorInteiro)) {
+    console.log("Isso não é um número válido!");
+} else {
+    console.log("Valor inteiro processado: " + valorInteiro);
+}
