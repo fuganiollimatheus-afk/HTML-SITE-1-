@@ -1,0 +1,9 @@
+function interacaoSocial(acao) {
+    let regraPessoal = "gentileza";
+    
+    if (acao.metodo === regraPessoal) {
+        return "Felicidade Moral: Sistema Estável";
+    } else {
+        return "Erro de Sistema: Reavaliar conduta";
+    }
+}
