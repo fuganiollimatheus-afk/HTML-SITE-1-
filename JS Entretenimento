@@ -1,0 +1,8 @@
+function verificarAmizade(simpatico, empatico, fiel, sabeAjudar) {
+    // Se todos os requisitos forem verdadeiros (true)
+    if (simpatico && empatico && fiel && sabeAjudar) {
+        return "Conexão Segura: Este é um Amigo Verdadeiro.";
+    } else {
+        return "Alerta de Sistema: Esta infraestrutura precisa de reparos.";
+    }
+}
