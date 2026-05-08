@@ -1,0 +1,11 @@
+let diaAtual = "difícil";
+let erroCometido = true;
+
+if (erroCometido) {
+    reconhecerErro(); // Você já fez isso na sua reflexão.
+    pedirDesculpas(); // Se puder, fale com sua família.
+    resetarSistema(); // Amanhã é um novo loop, uma nova chance.
+}
+
+// O autorrespeito diz que você merece descanso, não punição.
+selfCare.status = "Prioridade Máxima";
