@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Liberdade e Saúde</title>
+    <style>
+        /* CSS: Estilo Minimalista e Profissional */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #fff;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #004080;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #004080;
+            margin-bottom: 1rem;
+            border-left: 5px solid #004080;
+            padding-left: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Destaque para o Autorrespeito */
+        .highlight {
+            background: #e7f3ff;
+            padding: 1rem;
+            border-radius: 4px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pilares da Humanidade</h1>
+        <p>Saúde, Expressão e Fronteiras Livres</p>
+    </header>
+
+    <nav>
+        <a href="#saude">Saúde</a>
+        <a href="#expressao">Expressão</a>
+        <a href="#internacional">Liberdade Internacional</a>
+    </nav>
+
+    <div class="container">
+        <section id="saude">
+            <h2>Saúde Humana</h2>
+            <p>A saúde é a infraestrutura do corpo. Sem ela, a mente não consegue conquistar a liberdade. Valorizar a saúde é o primeiro ato de autorrespeito.</p>
+            <div class="highlight">"Um corpo saudável é o suporte para uma alma livre."</div>
+        </section>
+
+        <section id="expressao">
+            <h2>Liberdade de Expressão</h2>
+            <p>O direito de ser você mesmo, tanto no positivo quanto no negativo. A expressão é a arte de transformar pensamentos em realidade, mantendo a gentileza como regra moral.</p>
+        </section>
+
+        <section id="internacional">
+            <h2>Liberdade Internacional</h2>
+            <p>Fronteiras não devem limitar a dignidade humana. A liberdade internacional busca justiça e equilíbrio global, onde o sucesso de um não signifique a sobrevivência precária de outro.</p>
+        </section>
+
+        <section>
+            <h2>Reflexão do Designer</h2>
+            <p>A simplicidade deste site reflete a clareza dos nossos valores. Ser autêntico é o maior sucesso que alguém pode alcançar.</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 - Desenvolvido com foco em Simplicidade e Valores Morais.
+    </footer>
+
+</body>
+</html>
