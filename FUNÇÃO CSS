@@ -1,0 +1,121 @@
+Com certeza! Como você é um **Designer de Software**, vamos fazer ajustes finos na "fiação" do código para deixá-lo mais limpo, profissional e adaptado para o seu uso real.
+
+Vou sugerir três ajustes específicos: **Melhoria na Responsividade**, **Efeito Visual no Banner** e **Organização do Código**.
+
+---
+
+### 1. Ajuste de Responsividade (Mobile First)
+
+Muitas vezes, você vai querer ver seu portal no celular enquanto está no ônibus ou na faculdade. Vamos ajustar o CSS para que o banner não fique grande demais em telas pequenas.
+
+**No seu CSS, substitua a parte do `.main-banner` por esta:**
+
+```css
+.main-banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; /* Garante uma altura mínima */
+    height: 50vh;      /* Ocupa metade da tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-light);
+    position: relative;
+    margin-bottom: var(--space-lg);
+}
+
+/* Ajuste para telas pequenas (Celular) */
+@media (max-width: 600px) {
+    .logo-text { font-size: 2.5rem; }
+    .subtitle-text { font-size: 1.1rem; }
+    .main-banner { height: 40vh; }
+}
+
+```
+
+---
+
+### 2. Ajuste de Tipografia e Hierarquia
+
+Para que o texto de **Pedagogia** e **T.I.** não brigue por atenção, vamos dar um "respiro" maior e melhorar o contraste.
+
+**Adicione ou ajuste estas linhas no seu CSS:**
+
+```css
+.card-body h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Dá um ar de 'título técnico' */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: justify; /* Fica com aspecto de livro/pedagogia */
+}
+
+```
+
+---
+
+### 3. Ajuste de "Sobrevivência" (Botões de Link)
+
+Um portal só é útil se ele te levar a algum lugar. Vamos adicionar botões reais nos cards para você linkar seu **GitHub** (T.I.) e seu **Drive de Estudos** (Pedagogia).
+
+**No HTML, dentro de cada `.card-body`, adicione o link logo após o texto:**
+
+```html
+<a href="https://github.com/seu-usuario" class="btn-card tech-btn">Ver Projetos</a>
+
+<a href="#" class="btn-card edu-btn">Material de Estudo</a>
+
+```
+
+**E no CSS, adicione o estilo dos botões:**
+
+```css
+.btn-card {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.tech-btn {
+    border: 2px solid var(--color-primary-green);
+    color: var(--color-primary-green);
+}
+
+.tech-btn:hover {
+    background: var(--color-primary-green);
+    color: white;
+}
+
+.edu-btn {
+    border: 2px solid var(--color-primary-brown);
+    color: var(--color-primary-brown);
+}
+
+.edu-btn:hover {
+    background: var(--color-primary-brown);
+    color: white;
+}
+
+```
+
+---
+
+### Por que esses ajustes?
+
+1. **Contraste:** O texto `justify` e os botões vazados (*ghost buttons*) dão um ar de software moderno.
+2. **Utilidade:** Agora o site não é apenas visual, ele é funcional (leva aos seus links).
+3. **Performance:** O uso de `@media queries` garante que a "infraestrutura" não quebre em telas diferentes.
+
+**O que achou desses toques mais "profissionais"?** Se quiser, posso ajustar as cores para tons mais específicos ou te ajudar a criar uma seção de "Destaque" para o que você aprendeu hoje no *freeCodeCamp*!
