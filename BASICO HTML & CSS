@@ -1,0 +1,99 @@
+Para unir tudo o que conversamos — **T.I., Pedagogia, Liderança com Autonomia e Esforço Inteligente** — preparei uma atividade prática de Front-end e Design.
+
+O objetivo é criar uma **"Página de Resumo Didático"**. Ela serve para você estudar para a faculdade de Pedagogia usando suas habilidades de T.I., sem se desgastar.
+
+---
+
+### O Desafio: Criar um "Componente de Estudo"
+
+Você vai construir um layout que organiza uma ideia central e três pontos de apoio. Isso exercita sua visão de **Designer** (organização visual) e de **Desenvolvedor** (infraestrutura de código).
+
+#### 1. Estrutura (HTML)
+
+Use as tags que mostram a importância de cada parte (semântica).
+
+```html
+<main class="estudo-layout">
+    <section class="topo-banner">
+        <h1>Autonomia no Aprendizado</h1>
+        <p>Como o auxílio do líder gera independência.</p>
+    </section>
+
+    <div class="grid-conceitos">
+        <article class="item-estudo">
+            <div class="icone">💡</div>
+            <h3>O Líder Auxiliar</h3>
+            <p>Remove obstáculos, não dá ordens.</p>
+        </article>
+
+        <article class="item-estudo">
+            <div class="icone">⚙️</div>
+            <h3>A Infraestrutura</h3>
+            <p>O ambiente que permite o erro e o acerto.</p>
+        </article>
+
+        <article class="item-estudo">
+            <div class="icone">🌱</div>
+            <h3>O Resultado</h3>
+            <p>Menos desgaste e mais autorrespeito.</p>
+        </article>
+    </div>
+</main>
+
+```
+
+#### 2. Estilo (CSS)
+
+Aqui você aplica o **menos esforço**: use o **Flexbox** ou **Grid** para alinhar tudo automaticamente.
+
+```css
+.estudo-layout {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.topo-banner {
+    background: var(--color-primary-green); /* Use sua variável verde */
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-conceitos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Para funcionar no celular com menos esforço */
+}
+
+.item-estudo {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom: 4px solid var(--color-primary-brown); /* Marrom da Pedagogia */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+```
+
+---
+
+### 3. A Lógica de Design (Para seu Futuro)
+
+Para ser um bom Designer, foque nestes 3 pontos nesta atividade:
+
+1. **Hierarquia:** O título do banner deve ser a primeira coisa que o olho vê.
+2. **Espaço em Branco:** Não amontoe os textos. O espaço vazio "descansa" o cérebro do aluno (menos desgaste).
+3. **Contraste:** Use cores fortes para o que é importante e tons de cinza para o que é secundário.
+
+### Por que fazer essa atividade?
+
+* **Para o T.I.:** Você treina o uso de `Flexbox` e `CSS Variables`.
+* **Para a Pedagogia:** Você cria uma ferramenta visual para explicar conceitos complexos.
+* **Para Você:** Você cria um sistema de estudos que pode ser vendido ou usado como portfólio de **EdTech** (Educação + Tecnologia).
+
+**Você quer que eu te ajude a escolher uma paleta de cores que misture o Verde (TI) e o Marrom (Educação) de forma que fique elegante e profissional?**
