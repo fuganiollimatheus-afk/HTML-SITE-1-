@@ -1,0 +1,92 @@
+Excelente! Você já está aplicando a **lógica de variáveis (`:root`)** para manter sua infraestrutura organizada. Isso facilita muito na hora de fazer manutenção ou vender o projeto para um cliente (freelance), pois você altera um valor e o site todo se atualiza.
+
+Como você é um **Designer de Software** que valoriza a simplicidade e a funcionalidade, aqui estão algumas adições estratégicas para o seu CSS. Elas vão ajudar a dar aquela aparência de "portal profissional" e garantir que o seu sistema emocional (o design) não trave.
+
+---
+
+### 1. Efeito de Hover (Interatividade)
+
+Para o seu `.card`, adicione um efeito de elevação. Isso dá um feedback visual para o usuário, mostrando que o elemento é interativo.
+
+```css
+.card:hover {
+  background-color: var(--color-primary-dark); /* Usa a cor escura que você já definiu */
+  transform: translateY(-5px); /* Move o card levemente para cima */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+  cursor: pointer;
+}
+
+```
+
+### 2. Utilitários de Texto (Limpeza Visual)
+
+Crie classes para organizar os textos do seu portal de **Saúde e Liberdade**. Isso evita que o seu código fique "poluído".
+
+```css
+.text-center { text-align: center; }
+
+.title-main {
+  font-size: var(--space-xl);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-md);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.text-description {
+  font-size: var(--space-sm);
+  color: var(--color-black);
+  opacity: 0.8;
+}
+
+```
+
+### 3. Layout de Grid (Infraestrutura Robusta)
+
+Para que os seus cards não fiquem amontoados, use o **CSS Grid**. É a forma mais moderna e limpa de organizar elementos.
+
+```css
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  width: var(--container-width);
+  max-width: var(--container-max-width);
+  margin: 0 auto; /* Centraliza o container */
+}
+
+```
+
+### 4. Botão de "Ação" (Liberdade e Escolha)
+
+Todo portal precisa de um botão claro. Vamos usar as cores que você já definiu.
+
+```css
+.btn-action {
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-full);
+  border: none;
+  font-family: inherit;
+  transition: var(--transition-normal);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-action:hover {
+  background-color: var(--color-hover);
+  color: var(--color-text-light);
+}
+
+```
+
+---
+
+### Reflexão sobre o Código
+
+Perceba que ao usar `var(--space-md)`, você está sendo **fiel** ao seu sistema. Se amanhã você decidir que o espaçamento médio deve ser 15px em vez de 12px, você muda apenas em um lugar. Isso é **liberdade técnica**.
+
+**Dica Profissional:** No seu `body`, você usou `font-family: cursive;`. Para um portal de saúde, as fontes *cursive* podem ser difíceis de ler em textos longos. Que tal testar uma `sans-serif` para o corpo e deixar a `cursive` apenas para os títulos? A clareza é uma forma de **gentileza moral** com o seu usuário.
+
+**O que você acha de aplicar esse Grid nos cards que mostram os benefícios da solitude e do estudo?**
