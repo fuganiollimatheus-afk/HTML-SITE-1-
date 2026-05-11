@@ -1,0 +1,117 @@
+Para unir seus dois mundos (**T.I.** e **Pedagogia**) em um projeto prático que ajude na sua renda e futuro, vamos construir uma estrutura de "Card de Estudo".
+
+Imagine que cada card desse é uma "pílula de conhecimento" que você pode usar para ensinar seus futuros alunos ou para organizar seus próprios resumos de faculdade.
+
+### 1. O HTML (A Estrutura Pedagógica)
+
+O HTML é como o plano de aula: ele define o que é importante e qual a ordem das coisas.
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Plano de Estudos Dual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Painel de Sobrevivência e Futuro</h1>
+        <p>Alternando entre Código e Educação</p>
+    </header>
+
+    <main class="container">
+        <article class="card tech">
+            <h2>Tecnologia (T.I.)</h2>
+            <p>Foco em <strong>Infraestrutura</strong> e <strong>Design</strong>. É o motor da minha liberdade financeira.</p>
+            <span class="tag">Renda Futura</span>
+        </article>
+
+        <article class="card edu">
+            <h2>Pedagogia</h2>
+            <p>Estudo da <strong>Didática</strong> e <strong>Concursos</strong>. É a base da minha sobrevivência.</p>
+            <span class="tag">Renda Imediata</span>
+        </article>
+    </main>
+
+</body>
+</html>
+
+```
+
+---
+
+### 2. O CSS (A Identidade do Designer)
+
+O CSS é onde você aplica seu **autorrespeito** e organização. Use as variáveis que você criou antes para manter tudo limpo.
+
+```css
+/* Usando suas variáveis de infraestrutura */
+:root {
+    --color-tech: #4d8b55; /* O verde que você escolheu */
+    --color-edu: #3a6d42;  /* Um tom mais escuro para educação */
+    --color-bg: #f4f4f4;
+    --space: 20px;
+}
+
+body {
+    font-family: sans-serif; /* Mais legível para estudo */
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: var(--space);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex; /* Coloca um ao lado do outro */
+    gap: var(--space);
+    justify-content: center;
+    flex-wrap: wrap; /* Ajusta no celular */
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: var(--space);
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efeito de foco */
+}
+
+.card h2 {
+    color: var(--color-tech);
+    border-bottom: 2px solid var(--color-tech);
+    padding-bottom: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+```
+
+---
+
+### Por que isso é importante para você?
+
+1. **Simplicidade:** Você consegue ver os dois caminhos de forma clara.
+2. **Organização:** Ao construir isso, você exercita a paciência do T.I. e a clareza da Pedagogia.
+3. **Portfólio:** Se um dia você for dar aula de informática, você já tem o seu material didático construído por você mesmo.
+
+**Qual o próximo passo que você quer dar: adicionar uma lista de tarefas para cada área ou aprender a colocar cores diferentes para cada "matéria"?** Mudar a cor ajuda o cérebro a saber em qual "contexto" você está agora.
