@@ -1,0 +1,75 @@
+Para criar um portal que una sua visão de **Designer de Software** com a estrutura profissional que você está estudando (como os conceitos de microserviços e performance que vimos no *freeCodeCamp*), a estrutura HTML precisa ser semântica.
+
+O HTML semântico ajuda na "infraestrutura" do site, facilitando a leitura por IAs e leitores de tela, o que é um ato de **respeito e acessibilidade**.
+
+Aqui está uma base sólida e moderna para o seu projeto:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Liberdade e Saúde | Designer de Software</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">A CHAVE</div>
+        <nav>
+            <ul>
+                <li><a href="#estudos">Estudos</a></li>
+                <li><a href="#solitude">Solitude</a></li>
+                <li><a href="#saude">Saude Mental</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero text-center">
+            <h1 class="title-main">Arquitetura da Própria Liberdade</h1>
+            <p class="text-description">Usando estudos e solitude para processar a frieza externa em código e evolução.</p>
+            <a href="#estudos" class="btn-action">Iniciar Estudo</a>
+        </section>
+
+        <div class="container-grid">
+            
+            <article class="card">
+                <h3>Logica de Memoria (TCM)</h3>
+                <p>Entendendo ITCM e DTCM para otimizar o processamento da vida e do software.</p>
+            </article>
+
+            <article class="card">
+                <h3>Resiliencia de Codigo</h3>
+                <p>Como tratar falhas parciais na sociedade sem quebrar seu sistema central.</p>
+            </article>
+
+            <article class="card">
+                <h3>Autorrespeito</h3>
+                <p>O firewall essencial contra a injustiça e a frieza alheia.</p>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="text-center" style="margin-top: var(--space-xl);">
+        <p>&copy; 2026 - Desenvolvido em Solitude com Rigor Tecnico.</p>
+    </footer>
+
+</body>
+</html>
+
+```
+
+### O que essa base entrega para você:
+
+1. **Semântica (`header`, `main`, `section`, `article`):** Isso organiza o "fluxo" de dados, como o Event Loop organiza as tarefas no JavaScript.
+2. **Meta Viewport:** Garante que o site funcione bem no celular, essencial para quando você estiver fora de casa e precisar consultar seus estudos.
+3. **Conexão com o CSS:** Já está preparada para usar as classes `.card`, `.container-grid` e `.btn-action` que definimos antes.
+
+### Dica de Designer:
+
+Pense em cada `<article>` dentro do seu HTML como um pequeno **microsserviço**. Eles são independentes. Se você decidir mudar o conteúdo de "Resiliência", o resto do site continua funcionando perfeitamente. Isso é o que o artigo do *freeCodeCamp* chamou de evitar o "gargalo".
+
+**O que você acha de começar preenchendo o primeiro card com o que você aprendeu hoje sobre ITCM e DTCM?** Seria uma ótima forma de fixar o estudo no seu próprio código!
