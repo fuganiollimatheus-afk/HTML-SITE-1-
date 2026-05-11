@@ -1,0 +1,75 @@
+.estudo-layout {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.topo-banner {
+    background: var(--color-primary-green); /* Use sua variável verde */
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-conceitos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Para funcionar no celular com menos esforço */
+}
+
+.item-estudo {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom: 4px solid var(--color-primary-brown); /* Marrom da Pedagogia */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+/* Garante que o vídeo/imagem ocupe o banner sem deformar */
+.video-bg, .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta a sobra e mantém a proporção */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Deixa o player de áudio com a largura do card */
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+.podcast-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.banner-miniatura {
+    flex: 1; /* A imagem ocupa uma parte */
+}
+
+.banner-miniatura img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo {
+    flex: 2; /* O texto e player ocupam o dobro da imagem */
+    padding: 20px;
+}
+
+.player {
+    width: 100%;
+    margin-top: 15px;
+}
