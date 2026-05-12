@@ -1,0 +1,58 @@
+Para resolver o problema das faltas em **INFI** (Informática) sem se desgastar e de forma direta, foque na **estratégia de compensação**.
+
+Aqui está o plano de ação com **menor esforço**:
+
+---
+
+### 1. O Recurso: "Portfólio de Presença"
+
+Em vez de tentar explicar cada falta, entregue uma solução visual que prova que você domina o conteúdo.
+
+* **O que fazer:** Pegue 3 ou 4 anotações importantes do seu **caderno** e 2 **commits do seu GitHub**.
+* **A Ferramenta:** Use o modelo HTML/CSS que discutimos para criar uma página única chamada "Relatório de Atividades Extra-Classe".
+* **O Argumento:** Chegue ao professor e diga: *"Tive dificuldades com o horário, mas aqui está o que produzi de forma autônoma para garantir o aprendizado da matéria."*
+
+---
+
+### 2. Planejamento de Sobrevivência (Checklist)
+
+Para não precisar de muita energia, siga estes passos:
+
+1. **Verificar o Número:** Descubra exatamente quantas faltas você tem (ex: 18 de 20).
+2. **Travar o Sistema:** A partir de amanhã, presença obrigatória. É o seu "modo de segurança".
+3. **Segunda Chamada:** Se perdeu prova, peça a segunda chamada imediatamente usando o recurso da autonomia (mostre seu interesse técnico).
+
+---
+
+### 3. Código Simples para a Solução
+
+Crie um arquivo `index.html` básico para mostrar ao professor. Isso economiza tempo e impressiona pela organização.
+
+```html
+<main style="font-family: sans-serif; padding: 20px;">
+    <h1>Compensação de Atividades - INFI</h1>
+    <p><strong>Aluno:</strong> [Seu Nome]</p>
+    
+    <section>
+        <h2>Conteúdos Praticados:</h2>
+        <ul>
+            <li>Lógica de Programação (ver anotações no caderno)</li>
+            <li>Desenvolvimento Front-end (ver commits no GitHub)</li>
+            <li>Design de Interface</li>
+        </ul>
+    </section>
+
+    <a href="URL-DO-SEU-GITHUB" style="background: green; color: white; padding: 10px; text-decoration: none;">Ver Repositório de Estudos</a>
+</main>
+
+```
+
+---
+
+### Por que isso funciona?
+
+* **Simplicidade:** Você usa o que já tem (caderno e GitHub).
+* **Consciência:** Você mostra ao professor que se importa com o "sucesso consciente", não apenas com a nota.
+* **Resultado:** Na maioria das vezes, o professor de informática valoriza a **produção técnica** mais do que a presença física.
+
+**Você consegue separar 30 minutos hoje para organizar esse link do GitHub e levar para o professor amanhã?** Resolver isso agora é o que vai te permitir "viver a vida" sem esse peso nas costas.
