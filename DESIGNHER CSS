@@ -1,0 +1,77 @@
+Esse é o seu **kit de ferramentas essencial**. Para um Designer de Software e Pedagogo, o planejamento deve ser como uma "planta baixa" de uma casa: simples de entender, mas sólida o suficiente para construir em cima.
+
+Aqui está como organizar esses elementos com **baixo esforço** e **alta eficiência**:
+
+---
+
+### 1. Topografia e Números (A Hierarquia)
+
+No design, a "topografia" visual guia o olho do usuário. Os números ajudam a manter a proporção.
+
+* **A Regra de Ouro:** Use a escala de **8px**. Se um título tem 32px, o texto tem 16px. Isso cria harmonia automática.
+* **Números Críticos:** No seu caso, use o planejamento para monitorar suas **faltas (20/50)**. Crie um gráfico simples no seu site para ver esse "número" baixar conforme você entrega atividades.
+
+### 2. Formas Geométricas (A Estrutura)
+
+As formas organizam o conteúdo e dão "autonomia" para cada seção.
+
+* **Retângulos:** Para os seus cards de estudo (T.I. e Pedagogia).
+* **Círculos:** Para ícones ou fotos de perfil (sua marca pessoal).
+* **Linhas:** Para separar os argumentos no seu Artigo de Opinião.
+
+### 3. Cores e Banner (O Sentimento)
+
+Cores comunicam sem precisar de texto.
+
+* **Verde (T.I.):** Transmite tecnologia, crescimento e "sistema rodando".
+* **Marrom/Tons de Terra (Pedagogia):** Transmite base, acolhimento e ensino.
+* **Banner:** Deve ser o seu "cartão de visitas". Use uma imagem leve (a flor que voa) com um título forte.
+
+### 4. Texto (A Mensagem)
+
+Como você disse, use um **vocabulário simples**.
+
+* **Título:** Direto ao ponto (Ex: "Solução para Faltas em INFI").
+* **Corpo:** Parágrafos curtos. Facilitar a leitura do professor é um ato de "líder auxiliar".
+
+---
+
+### Como aplicar isso no seu HTML/CSS (O Plano)
+
+Use este guia de estilo para não se desgastar criando do zero:
+
+```css
+:root {
+    /* Cores */
+    --primary-green: #2ecc71;
+    --base-brown: #8d6e63;
+    
+    /* Topografia (Tamanhos) */
+    --font-h1: 2.5rem; /* Números grandes para títulos */
+    --font-p: 1.1rem;  /* Texto simples para leitura */
+    
+    /* Formas */
+    --radius: 12px;    /* Bordas arredondadas para leveza */
+}
+
+.banner {
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('sua-imagem.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+}
+
+```
+
+---
+
+### Por que esse planejamento resolve sua vida?
+
+* **Solução para Faltas:** Se você apresentar um trabalho com esse nível de design (cores certas, formas organizadas), o professor verá que você teve **consciência** e dedicação técnica.
+* **Economia de Tempo:** Com as cores e fontes já decididas, você não perde tempo "testando". Você apenas **executa**.
+
+> **Dica de Ouro:** O design é o "recurso" que convence o professor de que você merece a nota, mesmo com as faltas. Um trabalho bonito e organizado passa muito mais confiança.
+
+**Você já escolheu quais serão as duas cores principais do seu portal (o verde da TI e qual tom de marrom/bege da Pedagogia)?** Definir isso agora é o primeiro passo do seu planejamento.
