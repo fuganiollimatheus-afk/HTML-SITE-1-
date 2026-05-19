@@ -1,0 +1,325 @@
+Adicionar animações e GIFs em um design minimalista é um excelente desafio de equilíbrio. No minimalismo, menos é mais: a animação não deve servir para "enfeitar", mas sim para **guiar o olhar do usuário** ou dar um feedback sutil. Se exagerarmos, o design perde a clareza e vira poluição visual.
+
+Na engenharia de estilo (CSS), usamos micro-interações. Vamos ver como adicionar uma animação sutil nos links/botões e como embutir um GIF de forma elegante.
+
+---
+
+### 1. Adicionando Animações Sutis (Transitions e Hover)
+
+No minimalismo, as animações mais elegantes são aquelas que reagem ao movimento do mouse. Vamos adicionar um efeito de "subida" e mudança de cor suave no botão e nos links.
+
+Adicione ou atualize estas regras no seu arquivo **CSS (`CSS/DESG(1).css`)**:
+
+```css
+/* Animação suave para os links do Menu */
+.main-nav a {
+    color: #666666;
+    text-decoration: none;
+    font-weight: 500;
+    /* A transição cria o efeito de animação no tempo */
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+/* Quando o mouse passa por cima do link */
+.main-nav a:hover {
+    color: #4d8b55;
+    transform: translateY(-2px); /* Sobe de leve (2 pixels) */
+}
+
+/* Animação para o Botão Principal */
+.btn-action {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #4d8b55;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    /* Transição para suavizar a mudança de estado */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-action:hover {
+    background-color: #3a6d42;
+    transform: translateY(-3px); /* Sobe um pouco mais que o link */
+    box-shadow: 0 6px 15px rgba(77, 139, 85, 0.3); /* Sombra aumenta suavemente */
+}
+
+```
+
+---
+
+### 2. Como usar um GIF sem quebrar o Minimalismo
+
+Para usar um GIF em um design limpo, a regra de ouro é: **o GIF deve ter cores neutras ou uma animação muito suave (como uma linha se movendo ou um desenho simples)**. Evite GIFs piscantes ou muito rápidos.
+
+Você pode colocar o GIF dentro da moldura circular no lugar da imagem estática, ou usá-lo como um pequeno ícone de destaque.
+
+#### Exemplo no HTML (`index.html`):
+
+```html
+<section class="content-right">
+    <div class="image-frame">
+        <img src="MODELO/seu-desenho-animado.gif" alt="Animação de ilustração">
+    </div>
+</section>
+
+```
+
+#### Ajuste no CSS para o GIF cooperar com o layout:
+
+```css
+.image-frame {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%; 
+    overflow: hidden;
+    border: 5px solid #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    /* Garante que o GIF se adapte perfeitamente ao círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; 
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Não deixa o GIF esticar ou amassar */
+}
+
+```
+
+---
+
+### 💡 Regra da Razão para Animações:
+
+* **Duração:** Use tempos entre `0.2s` (200 milissegundos) e `0.4s`. Mais rápido que isso parece um erro; mais lento parece que o site está travado.
+* **Propósito:** A animação deve responder a uma ação do usuário (como passar o mouse ou clicar).
+
+Você já tem um arquivo de GIF pronto na sua pasta para testar ou prefere focar primeiro nas animações de transição do CSS?
+
+
+
+
+Este modelo do Figma é o seu **guia visual (wireframe)**. O seu objetivo como desenvolvedor é traduzir essa imagem em código estruturado (HTML) e estilos elegantes (CSS).
+
+Analisando o seu modelo, ele encaixa perfeitamente no estilo **simples, direto e minimalista** que você deseja. Vamos quebrar essa imagem em partes usando o planejamento e a razão:
+
+---
+
+### 1. Mapeamento do Modelo (Figma para HTML)
+
+Podemos dividir essa imagem em três blocos principais dentro do seu `<body>`:
+
+* **Topo (`<header>`):** Onde fica o título/logo "Matheus" e o menu de navegação que estruturamos.
+* **Esquerda (Coluna de Conteúdo):** Onde fica o texto principal (`<h1>`) dizendo quem você é, seus gostos (macarrão, manga, desenhar) e o botão de link (`<a>`).
+* **Direita (Coluna da Imagem):** Onde fica a sua foto ou ilustração dentro de uma moldura arredondada.
+
+---
+
+### 2. O Código Pronto para o seu Modelo
+
+Para fazer o seu site ficar igual ao layout do Figma, use o Flexbox para colocar o texto de um lado e a imagem do outro.
+
+#### Arquivo HTML (`index.html`)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus - Apresentação</title>
+    <link rel="stylesheet" href="CSS/DESG(1).css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo-container">
+            <h1>Matheus</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        
+        <section class="content-left">
+            <h2>Olá,</h2>
+            <h1>
+                Eu sou Matheus, tenho 20 anos. Gosto de desenhar, quero ser professor 
+                e gosto de macarrão e manga.
+            </h1>
+            <a href="https://github.com/SEU-USUARIO" target="_blank" class="btn-action">
+                Ver Projetos
+            </a>
+        </section>
+
+        <section class="content-right">
+            <div class="image-frame">
+                <img src="MODELO/Modelo figma.png" alt="Matheus - Foto de Perfil">
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
+
+```
+
+#### Arquivo CSS (`CSS/DESG(1).css`)
+
+Substitua o conteúdo do seu arquivo CSS por este para aplicar o layout bilateral:
+
+```css
+/* Reset inicial para limpar margens do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    background-color: #fafafa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+    background-color: transparent;
+}
+
+.logo-container h1 {
+    font-size: 24px;
+    color: #4d8b55; /* Sua cor primária */
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #666666;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #4d8b55;
+}
+
+/* Container Principal (Divisão em 2 colunas) */
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 8%;
+    flex: 1;
+    gap: 50px;
+}
+
+/* Coluna do Texto */
+.content-left {
+    flex: 1;
+    max-width: 600px;
+}
+
+.content-left h2 {
+    font-size: 28px;
+    color: #4d8b55;
+    margin-bottom: 10px;
+}
+
+.content-left h1 {
+    font-size: 32px;
+    line-height: 1.4;
+    color: #222222;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Botão de Ação Minimalista */
+.btn-action {
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #4d8b55;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(77, 139, 85, 0.2);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-action:hover {
+    background-color: #3a6d42;
+    transform: translateY(-2px);
+}
+
+/* Coluna da Imagem */
+.content-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-frame {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%; /* Faz a imagem ficar redonda igual a perfis modernos */
+    overflow: hidden;
+    border: 5px solid #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem não distorça */
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .main-container {
+        flex-direction: column-reverse; /* Imagem fica no topo no celular */
+        text-align: center;
+        padding: 20px;
+    }
+    .image-frame {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+```
+
+---
+
+### 💡 Próximo Passo do Planejamento:
+
+Salve esses códigos nos seus arquivos e abra o `index.html` no seu navegador. Você verá a mágica da transformação do design do Figma para a realidade do navegador acontecer!
+
+Conseguiu aplicar os arquivos na estrutura das pastas?
