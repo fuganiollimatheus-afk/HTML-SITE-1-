@@ -1,0 +1,86 @@
+Se o objetivo é manter tudo o **mais simples, limpo e direto possível** para poupar a tua energia mental e garantir que o código funciona à primeira sem erros, **sim, podemos simplificar ainda mais**.
+
+Olhando de forma totalmente calculista: quanto menos linhas de código escreveres, menos hipóteses tens de errar, menos tempo gastas e mais rápido atualizas o teu GitHub (`HTML-SITE-1-`).
+
+Aqui tens a **versão ultra-minimalista** (o esqueleto absoluto) baseada na apostila da Profª Mari.
+
+---
+
+### 🧱 1. O HTML Absolutamente Mínimo (`index.html`)
+
+Sem divisões complexas, apenas o banner direto com o teu texto de marketing:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing e Design</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="banner">
+        <h1>Marketing, Escrita e Design</h1>
+        <p>Se precisa de ajuda com o seu projeto, está no lugar certo.</p>
+        <a href="#" class="botao">Quero Começar</a>
+    </header>
+
+</body>
+</html>
+
+```
+
+---
+
+### 🎨 2. O CSS com o "Flexbox Mínimo" (`css/style.css`)
+
+Usamos apenas as 4 propriedades da apostila da Profª Mari que resolvem o design do banner completo (Ativar o Flexbox, alinhar em coluna, centralizar na vertical e centralizar na horizontal):
+
+```css
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    display: flex;        /* Ativa o Flexbox (Pág. 3) */
+    flex-direction: column; /* Coloca os textos um por baixo do outro */
+    justify-content: center; /* Centraliza verticalmente (Pág. 27) */
+    align-items: center;    /* Centraliza horizontalmente (Pág. 32) */
+    
+    background: #0f172a;    /* Fundo escuro elegante (uma única cor sólida) */
+    color: white;
+    height: 100vh;          /* Faz o banner ocupar a tela inteira do utilizador */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 { font-size: 2.5rem; margin: 0 0 10px 0; }
+p { font-size: 1.2rem; margin: 0 0 20px 0; color: #cbd5e1; }
+
+.botao {
+    background: #38bdf8;    /* Azul de destaque */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;  /* Remove o sublinhado do link */
+    border-radius: 4px;     /* Arredonda os cantos */
+    font-weight: bold;
+}
+
+```
+
+---
+
+### 🧠 Por que é que isto cumpre perfeitamente o teu Plano de Emergência?
+
+1. **Ação Rápida:** Consegues copiar, colar e testar isto em menos de 2 minutos.
+2. **Elegância Garantida:** O ecrã inteiro fica escuro, com o texto perfeitamente centralizado e um botão azul chamativo. É o visual padrão de grandes agências modernas.
+3. **Sem Margem para Erro:** Sem animações, sem degradês complexos, sem ficheiros de imagem pesados. É código limpo que a Profª Mari vai adorar ver e avaliar.
+4. **Nota no Git:** Salvas isto e dás o comando mais curto possível:
+`git add .`
+`git commit -m "feat: site minimalista concluído"`
+`git push origin main`
+
+O teu site está pronto, o teu marketing está feito e a tua energia foi poupada. Queres que usemos esta estrutura exata para fechar esta etapa, ou há algum detalhe simples que gostarias de mudar no botão?
