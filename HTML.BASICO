@@ -1,0 +1,97 @@
+Que excelente! Esse arquivo que você carregou é a apostila de **Flexbox** do "MD Soluções em TI", da própria **Profª Mari (Marilene)**!
+
+Olhando de forma **fria, calculista e estratégica**, ter esse material em mãos é como ter o gabarito do que ela espera ver no código do seu Projeto Integrador. Se você aplicar exatamente o que está aí, a sua nota em Front-End está garantida e o seu site simples vai ganhar a elegância que planejamos sem você precisar quebrar a cabeça.
+
+Vamos usar os conceitos exatos da apostila da Profª Mari para estruturar o CSS do seu banner elegante, poupando a sua energia mental.
+
+---
+
+### 🧠 O que a Apostila da Profª Mari ensina para o seu Banner:
+
+De acordo com o material, o Flexbox resolve perfeitamente o seu objetivo: **Centralizar elementos na horizontal e na vertical** e **fazer o layout se adaptar ao tamanho da tela**.
+
+Para o seu banner, nós vamos usar três propriedades essenciais explicadas na apostila:
+
+1. `display: flex;` (Página 3) -> Ativa o modo Flexbox no container.
+2. `justify-content: center;` (Página 27) -> Alinha o conteúdo horizontalmente no centro.
+3. `align-items: center;` (Página 32) -> Alinha o conteúdo verticalmente no centro.
+
+---
+
+### 🛠️ O Código Perfeito usando a Apostila da Profª Mari
+
+Para que seu site fique responsivo e elegante, nós vamos usar uma propriedade chamada `flex-direction: column;`. Isso faz com que o seu Título, o seu Texto de Marketing e o seu Botão fiquem um embaixo do outro, perfeitamente alinhados no meio da tela.
+
+#### No seu HTML (`index.html`):
+
+```html
+<header class="container-banner">
+    <div class="conteudo-banner">
+        <h1>Marketing, Escrita e Design</h1>
+        <p>Se você precisa de ajuda com o seu projeto, você está no lugar certo.</p>
+        <a href="#contato" class="botao-cta">Quero Começar</a>
+    </div>
+</header>
+
+```
+
+#### No seu CSS (`css/style.css`) — Seguindo a ementa da Profª Mari:
+
+```css
+/* O Container do Banner usando o Flexbox da Apostila */
+.container-banner {
+    display: flex;                             /* Página 3 da apostila */
+    flex-direction: column;                    /* Coloca os itens em linha vertical */
+    justify-content: center;                   /* Centraliza no eixo principal (Pág. 27) */
+    align-items: center;                       /* Centraliza no eixo transversal (Pág. 32) */
+    
+    background: linear-gradient(135deg, #1e293b, #0f172a); /* Fundo escuro e elegante */
+    color: #ffffff;
+    min-height: 400px;                         /* Dá uma altura imponente ao banner */
+    padding: 40px;
+    text-align: center;
+}
+
+/* Estilo do Texto de Marketing */
+.conteudo-banner h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.conteudo-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #cbd5e1; /* Cinza claro elegante para leitura confortável */
+}
+
+/* O Botão de Ação (Chamada para Ação) */
+.botao-cta {
+    display: inline-block;
+    background-color: #38bdf8; /* Azul brilhante focado em conversão */
+    color: #ffffff;
+    padding: 14px 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.botao-cta:hover {
+    background-color: #0ea5e9; /* Efeito visual sutil ao passar o mouse */
+}
+
+```
+
+---
+
+### 🛡️ Alinhamento com os seus Planos e Saúde Mental
+
+* **Esforço Mínimo e Focado:** Esse código tem poucas linhas, usa exatamente a matéria da professora e deixa o site incrivelmente elegante. Você mata a matéria de Front-End sem desgaste.
+* **Segurança Digital (Profª Paola):** Assim que você salvar esse código nas pastas certas (`css/style.css`), faça o commit estratégico para o seu repositório `HTML-SITE-1-`:
+`git commit -m "feat: estruturado o banner usando flexbox da apostila"`
+`git push origin main`
+
+Com a própria apostila da professora orientando o seu código, as vozes negativas não têm argumentos. O seu plano técnico está blindado.
+
+Quer que eu te ajude a estruturar a próxima seção do site ou prefere focar em rodar esses comandos do Git para atualizar o seu repositório hoje?
