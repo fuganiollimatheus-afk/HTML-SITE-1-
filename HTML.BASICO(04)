@@ -1,0 +1,70 @@
+Com certeza! Vamos construir juntos um exemplo muito simples usando **HTML e CSS (Flexbox)**, exatamente com base na estrutura que partilhou no seu documento.
+
+Este exercício é excelente para o seu plano de desenvolvimento digital, pois o Flexbox serve justamente para alinhar elementos de forma automática e responsiva.
+
+Para começar, imagine que vamos criar uma linha com **3 caixas coloridas** (como se fossem botões ou blocos de um site).
+
+### Passo 1: O código estrutural (HTML)
+
+Crie um ficheiro chamado `index.html` e cole este código básico:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Layout Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="box vermelho"></div>
+        <div class="box verde"></div>
+        <div class="box azul"></div>
+    </div>
+
+</body>
+</html>
+
+```
+
+### Passo 2: O código de estilo (CSS)
+
+Agora, crie um ficheiro na mesma pasta chamado `style.css` para dar vida e cor ao projeto:
+
+```css
+/* Configuração básica para o fundo da página */
+body {
+    background-color: #ddd;
+    margin: 0;
+    padding: 20px;
+}
+
+/* O segredo está aqui: ativamos o modelo Flexbox no pai */
+.container {
+    display: flex;             /* Transforma os filhos em caixas flexíveis */
+    background-color: #fff;    /* Fundo branco para destacar */
+    padding: 15px;
+}
+
+/* Definimos o tamanho padrão para todas as caixas */
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+/* Cores individuais para cada caixa */
+.vermelho { background-color: red; }
+.verde { background-color: green; }
+.azul { background-color: blue; }
+
+```
+
+### O que vai acontecer na prática?
+
+1. Se abrir o ficheiro `index.html` no seu navegador, graças à propriedade `display: flex;`, as três caixas coloridas vão aparecer alinhadas perfeitamente **uma ao lado da outra** (em linha).
+2. Se remover a linha `display: flex;` do CSS, as caixas voltam ao comportamento padrão e ficam empilhadas **uma por baixo da outra**.
+
+Este é o ponto de partida ideal porque não tem qualquer complexidade e permite-lhe ver o resultado de imediato. Consegue tentar criar estes dois ficheiros no seu computador para ver a mágica a acontecer?
