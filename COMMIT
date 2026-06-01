@@ -1,0 +1,6 @@
+🛡️ Alinhamento com os seus Planos e Saúde Mental
+Esforço Mínimo e Focado: Esse código tem poucas linhas, usa exatamente a matéria da professora e deixa o site incrivelmente elegante. Você mata a matéria de Front-End sem desgaste.
+
+Segurança Digital (Profª Paola): Assim que você salvar esse código nas pastas certas (css/style.css), faça o commit estratégico para o seu repositório HTML-SITE-1-:
+git commit -m "feat: estruturado o banner usando flexbox da apostila"
+git push origin main
